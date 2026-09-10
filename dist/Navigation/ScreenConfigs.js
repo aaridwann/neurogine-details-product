@@ -1,7 +1,13 @@
-import { DetailsScreen } from '../Screens/DetailScreen/DetailScreen.container';
-const detailScreenRoutes = [
+import React from 'react';
+import { DetailRoutes } from '../Shared';
+const DetailsScreen = React.lazy(() => import('../Screens/DetailScreen'));
+/**
+ * Configuration for detail screens
+ * @returns {ScreenConfig<"DetailScreen">} Array of ScreenConfig objects
+ */
+const DetailScreens = [
     {
-        name: 'DetailScreen',
+        name: DetailRoutes.DETAIL_ROUTE,
         component: DetailsScreen,
         options: {
             title: 'Detail Feature',
@@ -11,4 +17,4 @@ const detailScreenRoutes = [
         },
     },
 ];
-export default detailScreenRoutes;
+export default DetailScreens;

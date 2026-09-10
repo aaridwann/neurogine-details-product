@@ -1,4 +1,4 @@
-declare const _default: {
+declare const _default: Readonly<{
     container: {
         flex: number;
         justifyContent: "center";
@@ -10,6 +10,6 @@ declare const _default: {
         fontWeight: "bold";
         marginBottom: number;
     };
-};
+}>;
 export default _default;
 //# sourceMappingURL=DetailsScreen.styles.d.ts.map

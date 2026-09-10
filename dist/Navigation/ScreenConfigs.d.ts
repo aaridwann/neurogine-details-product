@@ -1,11 +1,9 @@
-import { ComponentType } from 'react';
-import { NativeStackNavigationOptions, NativeStackScreenProps } from '@react-navigation/native-stack';
-import { DetailFeatureParamList } from '../Types';
-export interface ScreenConfig<T extends keyof DetailFeatureParamList> {
-    name: T;
-    component: ComponentType<NativeStackScreenProps<DetailFeatureParamList, T>>;
-    options?: NativeStackNavigationOptions;
-}
-declare const detailScreenRoutes: ScreenConfig<'DetailScreen'>[];
-export default detailScreenRoutes;
+import { DetailRoutes } from '../Shared';
+import { ScreenConfig } from './ScreemConfigs.types';
+/**
+ * Configuration for detail screens
+ * @returns {ScreenConfig<"DetailScreen">} Array of ScreenConfig objects
+ */
+declare const DetailScreens: ScreenConfig<typeof DetailRoutes.DETAIL_ROUTE>[];
+export default DetailScreens;
 //# sourceMappingURL=ScreenConfigs.d.ts.map

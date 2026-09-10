@@ -1,21 +1,39 @@
 import React from 'react';
 
 import get from 'lodash/get';
-import { View, Text, Button } from 'react-native';
+// import { useSelector } from 'react-redux';
 
-import styles from './DetailsScreen.styles'
+import DetailScreenComponent from './DetailScreen.component';
 import { DetailScreenProps } from '../../Types';
 
-export const DetailsScreen: React.FC<DetailScreenProps> = ({ route, navigation }) => {
-  const itemId = get(route, 'params.itemId');
-  const title = get(route, 'params.title');
+/**
+ * DetailScreenContainer is a container component for the DetailScreen.
+ * It is also responsible for handling the navigation events.
+ * @param {Object} props - The component props.
+ * @param {Object} props.route - The route object.
+ * @param {Object} props.navigation - The navigation object.
+ * @returns {React.Component} The DetailScreenComponent.
+ */
+const DetailsScreen: React.FC<DetailScreenProps> = ({ route, navigation }) => {
+  // const state = useSelector((state: any) => state);
+
+  const itemId = get(route, 'params.itemId') as number | undefined;
+
+  const title = get(route, 'params.title') as string | undefined;
+
+  const handleGoBack = () => {
+    navigation.goBack();
+  };
 
   return (
-    <View>
-      <Text style={styles.text}>Detail Screen Module</Text>
-      {itemId && <Text>Item ID: {itemId}</Text>}
-      {title && <Text>Title: {title}</Text>}
-      <Button title="Go Back" onPress={() => navigation.goBack()} />
-    </View>
+    <DetailScreenComponent
+      itemId={itemId}
+      title={title}
+      onGoBack={handleGoBack}
+    />
   );
 };
+
+DetailsScreen.displayName = 'DetailScreen';
+
+export default React.memo(DetailsScreen);

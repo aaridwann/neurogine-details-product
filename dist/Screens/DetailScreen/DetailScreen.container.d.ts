@@ -1,4 +1,5 @@
 import React from 'react';
 import { DetailScreenProps } from '../../Types';
-export declare const DetailsScreen: React.FC<DetailScreenProps>;
+declare const _default: React.NamedExoticComponent<DetailScreenProps>;
+export default _default;
 //# sourceMappingURL=DetailScreen.container.d.ts.map

@@ -1,19 +1,17 @@
-import { ComponentType } from 'react';
+import React from 'react';
 
-import { NativeStackNavigationOptions, NativeStackScreenProps } from '@react-navigation/native-stack';
+import { DetailRoutes } from '../Shared';
+import { ScreenConfig } from './ScreemConfigs.types';
 
-import { DetailsScreen } from '../Screens/DetailScreen/DetailScreen.container';
-import { DetailFeatureParamList } from '../Types';
+const DetailsScreen = React.lazy(() => import('../Screens/DetailScreen'));
 
-export interface ScreenConfig<T extends keyof DetailFeatureParamList> {
-  name: T;
-  component: ComponentType<NativeStackScreenProps<DetailFeatureParamList, T>>;
-  options?: NativeStackNavigationOptions;
-}
-
-const detailScreenRoutes: ScreenConfig<'DetailScreen'>[] = [
+/**
+ * Configuration for detail screens
+ * @returns {ScreenConfig<"DetailScreen">} Array of ScreenConfig objects
+ */
+const DetailScreens: ScreenConfig<typeof DetailRoutes.DETAIL_ROUTE>[] = [
   {
-    name: 'DetailScreen',
+    name: DetailRoutes.DETAIL_ROUTE,
     component: DetailsScreen,
     options: {
       title: 'Detail Feature',
@@ -24,4 +22,4 @@ const detailScreenRoutes: ScreenConfig<'DetailScreen'>[] = [
   },
 ];
 
-export default detailScreenRoutes;
+export default DetailScreens;
