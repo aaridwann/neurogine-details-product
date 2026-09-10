@@ -1,0 +1,17 @@
+import { ComponentType } from "react";
+import { ParamListBase } from "@react-navigation/native";
+import { NativeStackNavigationOptions, NativeStackScreenProps } from "@react-navigation/native-stack";
+import { DetailFeatureParamList } from "../Types";
+/**
+ * Configuration for a screen in the detail feature
+ * @template T - Type of the screen name
+ * @param {T} name - Name of the screen
+ * @param {} component - Component of the screen
+ * @param {NativeStackNavigationOptions} [options] - Options of the screen
+ */
+export interface ScreenConfig<T extends keyof DetailFeatureParamList> {
+    name: T;
+    component: ComponentType<NativeStackScreenProps<ParamListBase, T>>;
+    options?: NativeStackNavigationOptions;
+}
+//# sourceMappingURL=ScreemConfigs.types.d.ts.map
