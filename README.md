@@ -1,0 +1,1 @@
+# -neurogine-details-product
