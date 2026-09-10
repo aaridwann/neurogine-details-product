@@ -8,7 +8,6 @@ node_modules/
 # ==========================================
 # Output Build & Compilation
 # ==========================================
-dist/
 build/
 lib/
 *.tsbuildinfo
