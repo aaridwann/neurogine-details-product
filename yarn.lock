@@ -9,6 +9,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@Neurogine/detail-product@workspace:."
   dependencies:
+    "@Neurogine/ui-kit-button": "https://github.com/aaridwann/neurogine-ui-kit-button.git#d3c497658ff1bcf23298ce04d69e783c0cf4eb6b"
+    "@Neurogine/ui-kit-general-text": "https://github.com/aaridwann/neurogine-ui-kit-general-text.git#d91430949c388958a685562a8d64c37d469dd542"
     "@eslint/compat": "npm:^2.1.1"
     "@eslint/js": "npm:^10.0.1"
     "@react-native/typescript-config": "npm:0.87.1"
@@ -46,6 +48,40 @@ __metadata:
     react-native: "*"
   languageName: unknown
   linkType: soft
+
+"@Neurogine/ui-kit-button@https://github.com/aaridwann/neurogine-ui-kit-button.git#d3c497658ff1bcf23298ce04d69e783c0cf4eb6b":
+  version: 1.0.0
+  resolution: "@Neurogine/ui-kit-button@https://github.com/aaridwann/neurogine-ui-kit-button.git#commit=d3c497658ff1bcf23298ce04d69e783c0cf4eb6b"
+  dependencies:
+    "@react-navigation/native": "npm:^6.0.0"
+    "@react-navigation/native-stack": "npm:^6.0.0"
+    "@reduxjs/toolkit": "npm:^2.12.0"
+    fast-memoize: "npm:^2.5.2"
+    lodash: "npm:^4.18.1"
+    react-redux: "npm:^9.3.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/d04ab9b3c3d868fbbf66e8058837ba374a0a74ac240933b70d1ae8abcdbcbbfb2a07415241628b75411d1d45861e41f775fc0edbbff14761ab4bac1f46a14014
+  languageName: node
+  linkType: hard
+
+"@Neurogine/ui-kit-general-text@https://github.com/aaridwann/neurogine-ui-kit-general-text.git#d91430949c388958a685562a8d64c37d469dd542":
+  version: 1.0.0
+  resolution: "@Neurogine/ui-kit-general-text@https://github.com/aaridwann/neurogine-ui-kit-general-text.git#commit=d91430949c388958a685562a8d64c37d469dd542"
+  dependencies:
+    "@react-navigation/native": "npm:^6.0.0"
+    "@react-navigation/native-stack": "npm:^6.0.0"
+    "@reduxjs/toolkit": "npm:^2.12.0"
+    fast-memoize: "npm:^2.5.2"
+    lodash: "npm:^4.18.1"
+    react-redux: "npm:^9.3.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/71e964a850cdf5c48a25c8ce0a84d9efa72266180c657d4ba2d290aada06b6a9530b32af27e98b257769c62e2ec8f127f318eaad5b0d62dcb940802ad2077d16
+  languageName: node
+  linkType: hard
 
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.27.1, @babel/code-frame@npm:^7.29.0, @babel/code-frame@npm:^7.29.7":
   version: 7.29.7

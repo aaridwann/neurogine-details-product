@@ -49,6 +49,8 @@
     "vitest-react-native": "^0.1.5"
   },
   "dependencies": {
+    "@Neurogine/ui-kit-button": "https://github.com/aaridwann/neurogine-ui-kit-button.git#d3c497658ff1bcf23298ce04d69e783c0cf4eb6b",
+    "@Neurogine/ui-kit-general-text": "https://github.com/aaridwann/neurogine-ui-kit-general-text.git#d91430949c388958a685562a8d64c37d469dd542",
     "@react-navigation/native": "^6.0.0",
     "@react-navigation/native-stack": "^6.0.0",
     "@reduxjs/toolkit": "^2.12.0",
