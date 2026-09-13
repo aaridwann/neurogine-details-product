@@ -61,6 +61,7 @@
     "@Neurogine/root": "https://github.com/aaridwann/neurogine-root.git#master",
     "@Neurogine/ui-kit-button": "https://github.com/aaridwann/neurogine-ui-kit-button.git#master",
     "@Neurogine/ui-kit-general-text": "https://github.com/aaridwann/neurogine-ui-kit-general-text.git#master",
+    "@gorhom/bottom-sheet": "^5.2.14",
     "@react-native-vector-icons/ionicons": "^13.1.4",
     "@react-navigation/native": "^6.0.0",
     "@react-navigation/native-stack": "^6.0.0",

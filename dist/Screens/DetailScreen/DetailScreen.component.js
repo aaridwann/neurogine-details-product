@@ -8,9 +8,11 @@ import GeneralText from '@Neurogine/ui-kit-general-text';
 import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
 import styles from './DetailsScreen.styles';
 import BadgeTextComponent from '../../Components/Badge';
+import BottomSheet from '../../Components/BottomSheet';
 import CardProduct from '../../Components/CardProduct';
 import { ReviewCard } from '../../Components/CommentSection/CommentSection.component';
 import ImageSlider from '../../Components/ImageSlider/ImageSlider.component';
+import ReloadScreen from '../../Components/ReloadScreen/ReloadScreen.component';
 import Skeleton from '../../Components/Shimmering/Shimmering.component';
 import fixture from '../../Fixture/Products.json';
 const STAR_SIZE = 12;
@@ -74,11 +76,10 @@ const _renderDetailBody = (data, isLoading, selectProductSuggestion) => (_jsxs(V
 const _gerPropsPullToRefresh = (refreshing, onRefresh) => ({
     refreshControl: _jsx(RefreshControl, { colors: ['#3aa6ffff', '#6db5ffff'], onRefresh: onRefresh, progressBackgroundColor: "#FFFFFF", refreshing: refreshing, tintColor: "#3aa6ffff", title: 'Loading...', titleColor: "#3aa6ffff" }),
 });
+const _renderBottomSheet = (showBottomSheet, refetch, goBack, onModalHide) => (_jsx(BottomSheet, { onCloseBottomSheet: onModalHide, snapPoints: ['80%'], sheetColor: "#558cc3ff", show: showBottomSheet, children: _jsx(ReloadScreen, { secondButtonOnPress: goBack, onReload: refetch }) }));
 const _getScrollViewConfig = (refreshing, onRefresh) => ({
     ..._gerPropsPullToRefresh(refreshing, onRefresh),
     contentContainerStyle: styles.detailScreenScrollContent,
 });
-const DetailScreenComponent = ({ data = {}, isLoading = true, refetch, isRefecthing, selectProductSuggestion = noop, }) => {
-    return (_jsxs(React.Fragment, { children: [_jsxs(ScrollView, { ..._getScrollViewConfig(isRefecthing, refetch), children: [_renderImageSlide(data, isLoading), _renderDetailBody(data, isLoading, selectProductSuggestion)] }), _renderStickyContent(isLoading)] }));
-};
+const DetailScreenComponent = ({ data = {}, isLoading = true, goBack, refetch, isRefecthing, selectProductSuggestion = noop, showBottomSheet, onModalHide, }) => (_jsxs(React.Fragment, { children: [_jsxs(ScrollView, { ..._getScrollViewConfig(isRefecthing, refetch), children: [_renderImageSlide(data, isLoading), _renderDetailBody(data, isLoading, selectProductSuggestion)] }), _renderStickyContent(isLoading), _renderBottomSheet(showBottomSheet, refetch, goBack, onModalHide)] }));
 export default DetailScreenComponent;

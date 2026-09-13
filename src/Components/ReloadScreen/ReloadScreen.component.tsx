@@ -15,24 +15,29 @@ import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
 
 import RefreshLottie from '../../Assets/Lottie/Refresh.json';
 
+import type { Navigation, VoidFunction } from '../../Types';
+
 export interface ReloadScreenProps {
-  onReload: () => void;
+  onReload: VoidFunction;
   title?: string;
   description?: string;
   buttonText?: string;
-  lottieSource?: any;
+  lottieSource?: string;
+  navigation: Navigation
+  secondButtonText?: string;
+  secondButtonOnPress?: VoidFunction;
 }
 
 // -----------------------------------------------------------------------------
 // HELPER RENDERS (Di luar komponen utama & <15 baris per fungsi)
 // -----------------------------------------------------------------------------
 
-export const renderLottieAnimation = (source?: any) => (
+export const renderLottieAnimation = (source?: string) => (
   <View style={styles.lottieWrapper}>
     <LottieView
       autoPlay
       loop
-      source={RefreshLottie}
+      source={source || RefreshLottie}
       style={styles.lottie}
     />
   </View>
@@ -50,10 +55,12 @@ export const renderContentText = (title: string, description: string) => (
 );
 
 export const renderReloadButton = (
-  onPress: () => void,
+  onPress: VoidFunction,
   buttonText: string,
   scale: Animated.SharedValue<number>,
-) => {
+  secondButtonText: string,
+  secondButtonOnPress: VoidFunction,
+): React.ReactNode => {
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
   }));
@@ -78,6 +85,15 @@ export const renderReloadButton = (
           {buttonText}
         </GeneralText>
       </Pressable>
+      <Pressable
+        onPressIn={handlePressIn}
+        onPressOut={secondButtonOnPress}
+        style={styles.button}
+      >
+        <GeneralText style={styles.buttonText} variant={VARIANT.LABEL1}>
+          {secondButtonText}
+        </GeneralText>
+      </Pressable>
     </Animated.View>
   );
 };
@@ -88,11 +104,13 @@ export const renderReloadButton = (
 
 export const ReloadScreen: React.FC<ReloadScreenProps> = ({
   onReload = noop,
-  title = 'Koneksi Terputus',
-  description = 'Gagal memuat data. Silakan periksa koneksi internet Anda dan coba lagi.',
-  buttonText = 'Coba Lagi',
+  title = 'Connection is broken',
+  description = 'Failed to load data. Please check your internet connection and try again.',
+  buttonText = 'Try again',
   lottieSource,
   navigation,
+  secondButtonText = 'Back',
+  secondButtonOnPress = noop,
 }) => {
   const buttonScale = useSharedValue(1);
 
@@ -113,7 +131,9 @@ export const ReloadScreen: React.FC<ReloadScreenProps> = ({
       <View style={styles.content}>
         {renderLottieAnimation(lottieSource)}
         {renderContentText(title, description)}
-        {renderReloadButton(onReload, buttonText, buttonScale)}
+        {renderReloadButton(
+          onReload, buttonText, buttonScale, secondButtonText, secondButtonOnPress,
+        )}
       </View>
     </View>
   );
@@ -126,11 +146,10 @@ export const ReloadScreen: React.FC<ReloadScreenProps> = ({
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    // backgroundColor: '#FFFFFF',
     backgroundColor: '#558cc3ff',
     flex: 1,
     justifyContent: 'center',
-    paddingHorizontal: 24,
+    // paddingHorizontal: 24,
   },
   content: {
     alignItems: 'center',
@@ -163,6 +182,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   buttonWrapper: {
+    gap: 8,
     marginTop: 32,
     width: '100%',
   },

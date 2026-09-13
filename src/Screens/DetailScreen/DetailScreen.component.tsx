@@ -11,24 +11,18 @@ import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
 
 import styles from './DetailsScreen.styles';
 import BadgeTextComponent from '../../Components/Badge';
+import BottomSheet from '../../Components/BottomSheet';
 import CardProduct from '../../Components/CardProduct';
 import { ReviewCard } from '../../Components/CommentSection/CommentSection.component';
 import ImageSlider from '../../Components/ImageSlider/ImageSlider.component';
+import ReloadScreen from '../../Components/ReloadScreen/ReloadScreen.component';
 import Skeleton from '../../Components/Shimmering/Shimmering.component';
 import fixture from '../../Fixture/Products.json';
 
-import type { DetailScreenComponentProps } from './DetailScreen.types';
+import type { DetailScreenComponentProps, InfoItem } from './DetailScreen.types';
 import type { SliderItem } from '../../Components/ImageSlider/ImageSlider.component.types';
-import type { ProductType, ReviewProductType } from '../../Types';
+import type { ProductType, ReviewProductType, VoidFunction } from '../../Types';
 
-export interface InfoItem {
-  key: string;
-  icon: IoniconsIconName;
-  label: string;
-  value: string;
-  textStyle?: TextStyle;
-  iconColor?: string;
-}
 const STAR_SIZE = 12;
 
 const _mapProductToTwoSlides = (product?: ProductType | null): SliderItem[] => {
@@ -156,11 +150,7 @@ export const _renderTags = (tags: string[], isLoading: boolean) => (
   </View>
 );
 
-const _getShippingItems = (
-  warranty: string,
-  shipping: string,
-  status: string,
-): InfoItem[] => [
+const _getShippingItems = (warranty: string, shipping: string, status: string): InfoItem[] => [
   { key: 'warranty', icon: 'shield-checkmark-outline', label: 'Warranty', value: warranty },
   { key: 'shipping', icon: 'cube-outline', label: 'Shipping', value: shipping },
   { key: 'status', icon: 'checkmark-circle-outline', label: 'Status', value: status, iconColor: '#10B981', textStyle: { color: '#10B981' } },
@@ -208,10 +198,7 @@ const _renderShippingAndStatus = (
   );
 };
 
-export const _renderDescription = (
-  description: string,
-  isLoading: boolean,
-) => (
+export const _renderDescription = (description: string,  isLoading: boolean) => (
   <View style={styles.descriptionWrapper}>
     {isLoading ? (
       <Skeleton borderRadius={8} height={24} width="35%" />
@@ -307,7 +294,11 @@ const _renderStickyContent = (isLoading: boolean) => (
   </View>
 );
 
-const _renderDetailBody = (data: ProductType, isLoading: boolean, selectProductSuggestion) => (
+const _renderDetailBody = (
+  data: ProductType,
+  isLoading: boolean,
+  selectProductSuggestion: (id: string) => void,
+) => (
   <View style={styles.detailScreenBodyContainer}>
     {_renderTitle(data.title, isLoading)}
     {_renderRating(data.rating, get(data, 'reviews.length', 0), isLoading)}
@@ -334,27 +325,29 @@ const _gerPropsPullToRefresh = (refreshing: boolean, onRefresh: () => void) => (
     />,
 });
 
-const _getScrollViewConfig = (refreshing: boolean, onRefresh: () => void) => ({
+const _renderBottomSheet = (showBottomSheet: boolean, refetch: VoidFunction, goBack: VoidFunction, onModalHide: VoidFunction) => (
+  <BottomSheet onCloseBottomSheet={onModalHide} snapPoints={['80%']} sheetColor="#558cc3ff" show={showBottomSheet}>
+    <ReloadScreen secondButtonOnPress={goBack} onReload={refetch} />
+  </BottomSheet>
+);
+
+const _getScrollViewConfig = (refreshing: boolean, onRefresh: VoidFunction) => ({
   ..._gerPropsPullToRefresh(refreshing, onRefresh),
   contentContainerStyle: styles.detailScreenScrollContent,
 });
 
 const DetailScreenComponent = ({
-  data = {},
-  isLoading = true,
-  refetch,
-  isRefecthing,
-  selectProductSuggestion = noop,
-}: DetailScreenComponentProps) => {
-  return (
-    <React.Fragment>
-      <ScrollView {..._getScrollViewConfig(isRefecthing, refetch)}>
-        {_renderImageSlide(data, isLoading)}
-        {_renderDetailBody(data, isLoading, selectProductSuggestion)}
-      </ScrollView>
-      {_renderStickyContent(isLoading)}
-    </React.Fragment>
-  );
-};
+  data = {}, isLoading = true, goBack,
+  refetch, isRefecthing, selectProductSuggestion = noop, showBottomSheet, onModalHide,
+}: DetailScreenComponentProps) => (
+  <React.Fragment>
+    <ScrollView {..._getScrollViewConfig(isRefecthing, refetch)}>
+      {_renderImageSlide(data, isLoading)}
+      {_renderDetailBody(data, isLoading, selectProductSuggestion)}
+    </ScrollView>
+    {_renderStickyContent(isLoading)}
+    {_renderBottomSheet(showBottomSheet, refetch, goBack, onModalHide)}
+  </React.Fragment>
+);
 
 export default DetailScreenComponent;

@@ -56,6 +56,7 @@ __metadata:
     "@babel/preset-react": "npm:^8.0.1"
     "@eslint/compat": "npm:^2.1.1"
     "@eslint/js": "npm:^10.0.1"
+    "@gorhom/bottom-sheet": "npm:^5.2.14"
     "@react-native-vector-icons/ionicons": "npm:^13.1.4"
     "@react-native/babel-preset": "npm:^0.87.1"
     "@react-native/jest-preset": "npm:^0.87.1"
@@ -1768,6 +1769,40 @@ __metadata:
     "@eslint/core": "npm:^1.2.1"
     levn: "npm:^0.4.1"
   checksum: 10c0/2daebaedcfbd261478e8b87dfb46d3118f48277c19eb298483ebc6f3b438e9688b86ddca13b3aeb08dfb06be00fb6073506852386aa124645c1170e7e33d140c
+  languageName: node
+  linkType: hard
+
+"@gorhom/bottom-sheet@npm:^5.2.14":
+  version: 5.2.14
+  resolution: "@gorhom/bottom-sheet@npm:5.2.14"
+  dependencies:
+    "@gorhom/portal": "npm:1.0.14"
+    invariant: "npm:^2.2.4"
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-native": "*"
+    react: "*"
+    react-native: "*"
+    react-native-gesture-handler: ">=2.16.1"
+    react-native-reanimated: "*"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-native":
+      optional: true
+  checksum: 10c0/744c718aaa4e66989043378932ea31d8ff510cff289b5561115530ff49218af080d28dbe409191b33ab7d87b1cfab4e7c16cfb0015cf2b6917b26c61f033bc05
+  languageName: node
+  linkType: hard
+
+"@gorhom/portal@npm:1.0.14":
+  version: 1.0.14
+  resolution: "@gorhom/portal@npm:1.0.14"
+  dependencies:
+    nanoid: "npm:^3.3.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/86f33afc2ac2656a86a6f3fd1e41565419839576ede2c38333434a93a0a2fe4fb6fc18ab3360579427f2a1fc3b4564b933cc5ae1793a7e2825c93860a00b215f
   languageName: node
   linkType: hard
 
@@ -8188,7 +8223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.23, nanoid@npm:^3.3.18":
+"nanoid@npm:^3.1.23, nanoid@npm:^3.3.1, nanoid@npm:^3.3.18":
   version: 3.3.19
   resolution: "nanoid@npm:3.3.19"
   bin:

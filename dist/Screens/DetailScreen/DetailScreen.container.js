@@ -17,7 +17,11 @@ const DetailsScreen = ({ route, navigation }) => {
     const selectProductSuggestion = React.useCallback((id) => {
         navigation.push('DetailScreen', { id });
     }, []);
-    return (_jsx(DetailScreenComponent, { refetch: hooks.refetch, isRefecthing: hooks.fetchStatus === 'fetching' && hooks.data, data: hooks.data, navigation: navigation, isLoading: hooks.isLoading || !hooks.data, selectProductSuggestion: selectProductSuggestion }));
+    const onModalHide = React.useCallback(() => {
+        if (hooks.isError)
+            navigation.goBack();
+    }, [hooks.isError, navigation]);
+    return (_jsx(DetailScreenComponent, { goBack: navigation.goBack, onModalHide: onModalHide, showBottomSheet: hooks.showBottomSheet, refetch: hooks.refetch, isRefecthing: hooks.fetchStatus === 'fetching' && hooks.data, data: hooks.data, navigation: navigation, isLoading: hooks.isLoading || !hooks.data, selectProductSuggestion: selectProductSuggestion }));
 };
 DetailsScreen.displayName = 'DetailScreen';
 export default React.memo(DetailsScreen);

@@ -3,6 +3,7 @@ import React from 'react';
 import get from 'lodash/get';
 
 import DetailScreenComponent from './DetailScreen.component';
+import ReloadScreen from '../../Components/ReloadScreen/ReloadScreen.component';
 import useProductDetail from '../../Hooks/UseProductDetail/UseProductDetail.hooks';
 
 import type { DetailScreenProps } from '../../Types';
@@ -23,8 +24,15 @@ const DetailsScreen: React.FC<DetailScreenProps> = ({ route, navigation }) => {
     navigation.push('DetailScreen', { id });
   }, []);
 
+  const onModalHide = React.useCallback(() => {
+    if (hooks.isError) navigation.goBack();
+  }, [hooks.isError, navigation]);
+
   return (
     <DetailScreenComponent
+      goBack={navigation.goBack}
+      onModalHide={onModalHide}
+      showBottomSheet={hooks.showBottomSheet}
       refetch={hooks.refetch}
       isRefecthing={hooks.fetchStatus === 'fetching' && hooks.data}
       data={hooks.data}
