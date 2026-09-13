@@ -1,3 +1,4 @@
+import { jsx as _jsx } from "react/jsx-runtime";
 import React from 'react';
 import get from 'lodash/get';
 import DetailScreenComponent from './DetailScreen.component';
@@ -16,7 +17,7 @@ const DetailsScreen = ({ route, navigation }) => {
     const selectProductSuggestion = React.useCallback((id) => {
         navigation.push('DetailScreen', { id });
     }, []);
-    return (<DetailScreenComponent refetch={hooks.refetch} isRefecthing={hooks.fetchStatus === 'fetching' && hooks.data} data={hooks.data} navigation={navigation} isLoading={hooks.isLoading || !hooks.data} selectProductSuggestion={selectProductSuggestion}/>);
+    return (_jsx(DetailScreenComponent, { refetch: hooks.refetch, isRefecthing: hooks.fetchStatus === 'fetching' && hooks.data, data: hooks.data, navigation: navigation, isLoading: hooks.isLoading || !hooks.data, selectProductSuggestion: selectProductSuggestion }));
 };
 DetailsScreen.displayName = 'DetailScreen';
 export default React.memo(DetailsScreen);

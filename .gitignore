@@ -31,6 +31,8 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+# Vitest reports and artifacts
+.vitest/
 
 # ==========================================
 # IDE & System Files

@@ -1,3 +1,4 @@
+import { jsx as _jsx } from "react/jsx-runtime";
 import React from 'react';
 import HeaderComponent from '../Components/Header/Header.component';
 import { DetailRoutes } from '../Shared';
@@ -11,7 +12,7 @@ const DetailScreens = [
         name: DetailRoutes.DETAIL_ROUTE,
         component: DetailsScreen,
         options: {
-            header: (props) => <HeaderComponent onBackPress={props.navigation.goBack} onNotificationPress={() => console.log('Notification Pressed')} subtitle="Explore Exclusive Collections" title="Store Catalog" showNotificationBadge/>,
+            header: (props) => _jsx(HeaderComponent, { onBackPress: props.navigation.goBack, onNotificationPress: () => console.log('Notification Pressed'), subtitle: "Explore Exclusive Collections", title: "Store Catalog", showNotificationBadge: true }),
         },
     },
 ];

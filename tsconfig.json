@@ -14,10 +14,13 @@
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "jsx": "react-jsx",
     "noEmitOnError": false
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "jest.config.cjs",
+    "jest.setup.js"
   ],
   "exclude": [
     "node_modules",
