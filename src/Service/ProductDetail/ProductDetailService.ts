@@ -11,9 +11,7 @@ const PATH_NAME = '/products';
  */
 export const fetchProductsDetail = async (id: string): Promise<ProductType> => {
   const { data } = await apiClient.get<ProductType>(`${PATH_NAME}/${id}`);
-  console.log('===> product detail data:', data);
 
-  // REST API detail (/products/2) mengembalikan object produk langsung pada `data`
   return data;
 };
 

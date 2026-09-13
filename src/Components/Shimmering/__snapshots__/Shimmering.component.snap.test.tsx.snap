@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shimmering Component Snapshots should match snapshot with all props provided (width, height, borderRadius, style) 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 8,
+        "height": 32,
+        "width": "80%",
+      },
+      {
+        "backgroundColor": "#E0E0E0",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+        "marginTop": 12,
+        "opacity": 0.8,
+      },
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with custom borderRadius 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 12,
+        "height": 100,
+        "width": 100,
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with custom style prop 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 4,
+        "height": 16,
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "#E0E0E0",
+        "marginBottom": 8,
+        "marginHorizontal": 16,
+        "marginTop": 12,
+        "opacity": 0.8,
+      },
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with default empty props 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 4,
+        "height": 16,
+        "width": "100%",
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with fully rounded shape (circle) 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 24,
+        "height": 48,
+        "width": 48,
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with height only 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 4,
+        "height": 50,
+        "width": "100%",
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with numeric width and height 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 4,
+        "height": 24,
+        "width": 200,
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with partial percentage string width (50%) 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 4,
+        "height": 20,
+        "width": "50%",
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with percentage string width (100%) 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 4,
+        "height": 16,
+        "width": "100%",
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with small decimal percentage width 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 4,
+        "height": 14,
+        "width": "33.3%",
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with width only 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 4,
+        "height": 16,
+        "width": 150,
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with zero borderRadius 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 0,
+        "height": 40,
+        "width": 120,
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Shimmering Component Snapshots should match snapshot with zero dimensions 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#b8c0c9ff",
+      },
+      {
+        "borderRadius": 0,
+        "height": 0,
+        "width": 0,
+      },
+      undefined,
+      {
+        "opacity": 0.3,
+      },
+    ]
+  }
+/>
+`;

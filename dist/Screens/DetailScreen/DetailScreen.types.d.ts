@@ -2,7 +2,7 @@ import type { TextStyle } from 'react-native';
 import type { Navigation, ProductType, VoidFunction } from '../../Types';
 import type { IoniconsIconName } from '@react-native-vector-icons/ionicons';
 export interface DetailScreenComponentProps {
-    itemId?: number;
+    id?: string;
     title?: string;
     refetch: () => void;
     data?: ProductType;

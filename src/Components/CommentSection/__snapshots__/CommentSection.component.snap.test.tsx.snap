@@ -1,0 +1,2417 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewCard Component Snapshots should match snapshot when isLoading is true with dummy review 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#b8c0c9ff",
+            },
+            {
+              "borderRadius": 18,
+              "height": 36,
+              "width": 36,
+            },
+            undefined,
+            {
+              "opacity": 0.3,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#b8c0c9ff",
+            },
+            {
+              "borderRadius": 8,
+              "height": 10,
+              "width": 60,
+            },
+            {
+              "marginBottom": 4,
+            },
+            {
+              "opacity": 0.3,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#b8c0c9ff",
+            },
+            {
+              "borderRadius": 8,
+              "height": 12,
+              "width": "35%",
+            },
+            undefined,
+            {
+              "opacity": 0.3,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#b8c0c9ff",
+            },
+            {
+              "borderRadius": 8,
+              "height": 12,
+              "width": 75,
+            },
+            undefined,
+            {
+              "opacity": 0.3,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#b8c0c9ff",
+          },
+          {
+            "borderRadius": 8,
+            "height": 10,
+            "width": 100,
+          },
+          {
+            "marginTop": 4,
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot when isLoading is true with empty review object 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#b8c0c9ff",
+            },
+            {
+              "borderRadius": 18,
+              "height": 36,
+              "width": 36,
+            },
+            undefined,
+            {
+              "opacity": 0.3,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#b8c0c9ff",
+            },
+            {
+              "borderRadius": 8,
+              "height": 10,
+              "width": 60,
+            },
+            {
+              "marginBottom": 4,
+            },
+            {
+              "opacity": 0.3,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#b8c0c9ff",
+            },
+            {
+              "borderRadius": 8,
+              "height": 12,
+              "width": "35%",
+            },
+            undefined,
+            {
+              "opacity": 0.3,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#b8c0c9ff",
+            },
+            {
+              "borderRadius": 8,
+              "height": 12,
+              "width": 75,
+            },
+            undefined,
+            {
+              "opacity": 0.3,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#b8c0c9ff",
+          },
+          {
+            "borderRadius": 8,
+            "height": 10,
+            "width": 100,
+          },
+          {
+            "marginTop": 4,
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with complete review data and isLoading false 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with decimal rating value 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with empty date string 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Invalid Date
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with empty string comment 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with extremely long comment text 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Produk ini memiliki kualitas yang sangat memuaskan, bahan fleksibel, jahitan rapi, paking aman dengan bubble wrap tebal, pengiriman tepat waktu, serta layanan customer service yang sangat ramah dan responsif saat dihubungi.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with invalid date string format 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Invalid Date
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with long reviewer name and long email address 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        D
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Dr. Alexander Bartholomew Christopher III
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with maximum rating 5 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with minimum rating 0 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with out-of-bounds rating greater than 5 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with out-of-bounds rating negative value 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Sep 14, 2026
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#E2E8F0",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star-outline"
+        >
+          Icon: star-outline
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;
+
+exports[`ReviewCard Component Snapshots should match snapshot with relative or formatted human-readable date 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F8FAFC",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "gap": 10,
+      "padding": 14,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "gap": 10,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0F172A",
+          "borderRadius": 18,
+          "height": 36,
+          "justifyContent": "center",
+          "width": 36,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+          }
+        }
+      >
+        A
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "600",
+          }
+        }
+      >
+        Ahmad Fauzi
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "marginTop": 1,
+          }
+        }
+      >
+        Invalid Date
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#F59E0B",
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          testID="icon-star"
+        >
+          Icon: star
+        </Text>
+      </View>
+    </View>
+  </View>
+  <GeneralText
+    style={
+      {
+        "color": "#334155",
+        "lineHeight": 20,
+      }
+    }
+  >
+    Sangat puas dengan kualitas produk ini! Pengiriman cepat.
+  </GeneralText>
+</View>
+`;

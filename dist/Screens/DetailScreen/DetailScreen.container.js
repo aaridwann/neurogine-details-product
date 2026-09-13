@@ -24,4 +24,4 @@ const DetailsScreen = ({ route, navigation }) => {
     return (_jsx(DetailScreenComponent, { goBack: navigation.goBack, onModalHide: onModalHide, showBottomSheet: hooks.showBottomSheet, refetch: hooks.refetch, isRefecthing: hooks.fetchStatus === 'fetching' && hooks.data, data: hooks.data, navigation: navigation, isLoading: hooks.isLoading || !hooks.data, selectProductSuggestion: selectProductSuggestion }));
 };
 DetailsScreen.displayName = 'DetailScreen';
-export default React.memo(DetailsScreen);
+export default DetailsScreen;

@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomSheet component should match snapshot with default props 1`] = `
+<View
+  testID="mock-bottom-sheet"
+>
+  <View
+    style={
+      {
+        "flex": 1,
+        "paddingBottom": 24,
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`BottomSheet component should match snapshot with title and close button 1`] = `
+<View
+  testID="mock-bottom-sheet"
+>
+  <View
+    style={
+      {
+        "flex": 1,
+        "paddingBottom": 24,
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "borderBottomColor": "#F3F4F6",
+          "borderBottomWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 12,
+          "paddingVertical": 14,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#111827",
+            "fontSize": 16,
+            "fontWeight": "700",
+          }
+        }
+      >
+        Bottom Sheet Title
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F3F4F6",
+            "borderRadius": 12,
+            "height": 28,
+            "justifyContent": "center",
+            "opacity": 1,
+            "padding": 4,
+            "width": 28,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#6B7280",
+              "fontSize": 12,
+              "fontWeight": "600",
+            }
+          }
+        >
+          ✕
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <Text>
+        Bottom Sheet Content
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`BottomSheet component should match snapshot with title and no close button 1`] = `
+<View
+  testID="mock-bottom-sheet"
+>
+  <View
+    style={
+      {
+        "flex": 1,
+        "paddingBottom": 24,
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "borderBottomColor": "#F3F4F6",
+          "borderBottomWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 12,
+          "paddingVertical": 14,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#111827",
+            "fontSize": 16,
+            "fontWeight": "700",
+          }
+        }
+      >
+        Bottom Sheet Title
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <Text>
+        Bottom Sheet Content
+      </Text>
+    </View>
+  </View>
+</View>
+`;

@@ -2,10 +2,9 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import React from 'react';
 import { FlatList, RefreshControl, ScrollView, View } from 'react-native';
 import Ionicons from '@react-native-vector-icons/ionicons';
-import { get, noop } from 'lodash';
+import { get, isUndefined, noop } from 'lodash';
 import ButtonComponent from '@Neurogine/ui-kit-button';
-import GeneralText from '@Neurogine/ui-kit-general-text';
-import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
+import GeneralText, { Constants } from '@Neurogine/ui-kit-general-text';
 import styles from './DetailsScreen.styles';
 import BadgeTextComponent from '../../Components/Badge';
 import BottomSheet from '../../Components/BottomSheet';
@@ -16,6 +15,7 @@ import ReloadScreen from '../../Components/ReloadScreen/ReloadScreen.component';
 import Skeleton from '../../Components/Shimmering/Shimmering.component';
 import fixture from '../../Fixture/Products.json';
 import { mapProductToTwoSlides } from '../../Utils/Data/Data.utils';
+const { VARIANT } = Constants;
 const STAR_SIZE = 12;
 const _renderImageSlide = (product, isLoading) => {
     const slidesData = mapProductToTwoSlides(product);
@@ -29,7 +29,7 @@ const calculateOriginalPrice = (price, discountPercentage) => {
     return Math.round(price * (1 + discountPercentage / 100) * 100) / 100;
 };
 const _renderPrice = (price, discountPercentage, isLoading) => (_jsx(View, { style: styles.priceContainer, children: isLoading ? (_jsxs(React.Fragment, { children: [_jsx(Skeleton, { borderRadius: 4, height: 20, width: 100 }), _jsx(Skeleton, { borderRadius: 4, height: 20, width: 60 }), _jsx(Skeleton, { borderRadius: 4, height: 20, width: 30 })] })) : (_jsxs(React.Fragment, { children: [_jsxs(GeneralText, { variant: VARIANT.HEADLINE2, children: ["$", price] }), _jsxs(GeneralText, { style: styles.priceOriginalText, variant: VARIANT.HEADLINE4, children: ["$", calculateOriginalPrice(price, discountPercentage)] }), _jsx(BadgeTextComponent, { backgroundColor: "rgba(0, 86, 148, 0.6)", color: "#FFFFFF", text: `${discountPercentage}%` })] })) }));
-export const _renderTags = (tags, isLoading) => (_jsx(View, { style: styles.tagsContainer, children: isLoading ? (_jsxs(React.Fragment, { children: [_jsx(Skeleton, { borderRadius: 8, height: 32, width: 60 }), _jsx(Skeleton, { borderRadius: 8, height: 32, width: 60 }), _jsx(Skeleton, { borderRadius: 8, height: 32, width: 60 })] })) : (_jsx(React.Fragment, { children: tags.map((tag) => (_jsx(BadgeTextComponent, { backgroundColor: "#EDEDED", color: "#777777", style: styles.tagsBadge, text: tag.toUpperCase() }, tag))) })) }));
+export const _renderTags = (tags, isLoading) => (_jsx(View, { style: styles.tagsContainer, children: isLoading ? (_jsxs(React.Fragment, { children: [_jsx(Skeleton, { borderRadius: 8, height: 32, width: 60 }), _jsx(Skeleton, { borderRadius: 8, height: 32, width: 60 }), _jsx(Skeleton, { borderRadius: 8, height: 32, width: 60 })] })) : (!isUndefined(tags) && (_jsx(React.Fragment, { children: tags.map((tag) => (_jsx(BadgeTextComponent, { backgroundColor: "#EDEDED", color: "#777777", style: styles.tagsBadge, text: tag.toUpperCase() }, tag))) }))) }));
 const _getShippingItems = (warranty, shipping, status) => [
     { key: 'warranty', icon: 'shield-checkmark-outline', label: 'Warranty', value: warranty },
     { key: 'shipping', icon: 'cube-outline', label: 'Shipping', value: shipping },
@@ -44,7 +44,7 @@ export const _renderDescription = (description, isLoading) => (_jsxs(View, { sty
 const _renderReview = (reviews, isLoading) => (_jsxs(View, { children: [isLoading ?
             _jsx(Skeleton, { width: '35%', height: 24, borderRadius: 8 }) :
             _jsx(GeneralText, { variant: VARIANT.HEADLINE3, children: "Reviews" }), _jsx(View, { style: styles.listReview, children: reviews.map((item, index) => (_jsx(ReviewCard, { isLoading: isLoading, review: item }, `${item.reviewerEmail}-${index}`))) })] }));
-export const _renderProductSuggestion = (products, isLoading, selectProductSuggestion) => (_jsxs(View, { style: styles.productSuggestionWrapper, children: [_jsx(GeneralText, { style: styles.productSuggestionTitle, variant: VARIANT.HEADLINE3, children: "Products You May Like" }), _jsx(FlatList, { contentContainerStyle: styles.productSuggestionListContainer, data: isLoading ? [1, 2, 3] : products, horizontal: true, keyExtractor: (item, index) => isLoading ? `skeleton-${index}` : item.id.toString(), renderItem: ({ item }) => (_jsx(CardProduct, { isLoading: isLoading, onPress: (p) => selectProductSuggestion(p.id), product: isLoading ? undefined : item })), showsHorizontalScrollIndicator: false })] }));
+export const _renderProductSuggestion = (products, isLoading, selectProductSuggestion) => (_jsxs(View, { style: styles.productSuggestionWrapper, children: [_jsx(GeneralText, { style: styles.productSuggestionTitle, variant: VARIANT.HEADLINE3, children: "Products You May Like" }), _jsx(FlatList, { contentContainerStyle: styles.productSuggestionListContainer, data: isLoading ? [1, 2, 3] : products, horizontal: true, keyExtractor: (item, index) => isLoading ? `skeleton-${index}` : item?.id?.toString(), renderItem: ({ item }) => (_jsx(CardProduct, { isLoading: isLoading, onPress: (p) => selectProductSuggestion(p?.id), product: isLoading ? undefined : item })), showsHorizontalScrollIndicator: false })] }));
 const _renderStickyContent = (isLoading) => (_jsxs(View, { style: styles.containerButton, children: [isLoading ? (_jsx(Skeleton, { borderRadius: 60, height: 48, width: "15%" })) : (_jsx(ButtonComponent, { isLoading: isLoading, onPress: noop, style: styles.wishlistButton, title: _jsx(Ionicons, { color: "#acacacff", name: "heart-outline", size: 24 }) })), isLoading ? (_jsx(Skeleton, { borderRadius: 60, height: 48, width: "80%" })) : (_jsx(ButtonComponent, { isLoading: isLoading, onPress: noop, style: styles.cartButton, title: _jsx(GeneralText, { style: styles.cartButtonText, variant: VARIANT.LABEL1, children: "Add to Cart" }) }))] }));
 const _renderDetailBody = (data, isLoading, selectProductSuggestion) => (_jsxs(View, { style: styles.detailScreenBodyContainer, children: [_renderTitle(data.title, isLoading), _renderRating(data.rating, get(data, 'reviews.length', 0), isLoading), _renderPrice(data.price, data.discountPercentage, isLoading), _renderTags(data.tags, isLoading), _renderShippingAndStatus(data.warrantyInformation, data.shippingInformation, data.availabilityStatus, isLoading), _renderDescription(data.description, isLoading), _renderReview(get(data, 'reviews', []), isLoading), _renderProductSuggestion(fixture, isLoading, selectProductSuggestion)] }));
 const _gerPropsPullToRefresh = (refreshing, onRefresh) => ({
@@ -56,4 +56,5 @@ const _getScrollViewConfig = (refreshing, onRefresh) => ({
     contentContainerStyle: styles.detailScreenScrollContent,
 });
 const DetailScreenComponent = ({ data = {}, isLoading = true, goBack, refetch, isRefecthing, selectProductSuggestion = noop, showBottomSheet, onModalHide, }) => (_jsxs(React.Fragment, { children: [_jsxs(ScrollView, { ..._getScrollViewConfig(isRefecthing, refetch), children: [_renderImageSlide(data, isLoading), _renderDetailBody(data, isLoading, selectProductSuggestion)] }), _renderStickyContent(isLoading), _renderBottomSheet(showBottomSheet, refetch, goBack, onModalHide)] }));
+DetailScreenComponent.displayName = 'DetailScreenComponent';
 export default DetailScreenComponent;

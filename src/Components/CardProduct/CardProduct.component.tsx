@@ -4,13 +4,14 @@ import { Image, Pressable, View } from 'react-native';
 
 import Ionicons from '@react-native-vector-icons/ionicons';
 
-import GeneralText from '@Neurogine/ui-kit-general-text';
-import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
+import GeneralText, { Constants } from '@Neurogine/ui-kit-general-text';
 
 import styles from './CardProduct.component.styles';
-import { type CardProductProps } from './CardProduct.helpers';
+import { type CardProductProps } from './CardProduct.types';
 import CardProductSkeleton from './CardProductSkeleton.component';
 import { calcOriginalPrice } from '../../Utils/Data/Data.utils';
+
+const { VARIANT } = Constants;
 
 export const CardProduct: React.FC<CardProductProps> = ({
   product, isLoading = false, onPress,
@@ -52,5 +53,7 @@ export const CardProduct: React.FC<CardProductProps> = ({
     </Pressable>
   );
 };
+
+CardProduct.displayName = 'CardProduct';
 
 export default CardProduct;

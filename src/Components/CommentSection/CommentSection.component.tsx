@@ -4,14 +4,15 @@ import { View } from 'react-native';
 
 import Ionicons from '@react-native-vector-icons/ionicons';
 
-import GeneralText from '@Neurogine/ui-kit-general-text';
-import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
+import GeneralText, { Constants } from '@Neurogine/ui-kit-general-text';
 
 import styles from './CommentSection.component.styles';
 import { formatDate } from '../../Utils/Data/Data.utils';
 import Skeleton from '../Shimmering/Shimmering.component';
 
 import type { ReviewProductType } from '../../Types';
+
+const { VARIANT } = Constants;
 
 /**
  * getAvatarInitial

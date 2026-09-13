@@ -1,0 +1,416 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail Screen Component Snapshots should match snapshot when component is in loading state 1`] = `
+[
+  <ScrollView
+    ref={null}
+  >
+    <Image-Slider
+      autoPlayInterval={3500}
+      data={{}}
+      isLoading={true}
+    />
+    <View>
+      <Shimmering
+        borderRadius={6}
+        height={24}
+        width="70%"
+      />
+      <View>
+        <Shimmering
+          borderRadius={4}
+          height={20}
+          width={24}
+        />
+        <Shimmering
+          borderRadius={4}
+          height={20}
+          width={40}
+        />
+        <Shimmering
+          borderRadius={4}
+          height={20}
+          width={80}
+        />
+      </View>
+      <View>
+        <Shimmering
+          borderRadius={4}
+          height={20}
+          width={100}
+        />
+        <Shimmering
+          borderRadius={4}
+          height={20}
+          width={60}
+        />
+        <Shimmering
+          borderRadius={4}
+          height={20}
+          width={30}
+        />
+      </View>
+      <View>
+        <Shimmering
+          borderRadius={8}
+          height={32}
+          width={60}
+        />
+        <Shimmering
+          borderRadius={8}
+          height={32}
+          width={60}
+        />
+        <Shimmering
+          borderRadius={8}
+          height={32}
+          width={60}
+        />
+      </View>
+      <View>
+        <View>
+          <View>
+            <Shimmering
+              borderRadius={8}
+              height={18}
+              width="35%"
+            />
+            <Shimmering
+              borderRadius={8}
+              height={18}
+              width="50%"
+            />
+            <Shimmering
+              borderRadius={8}
+              height={18}
+              width="25%"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <Shimmering
+          borderRadius={8}
+          height={24}
+          width="35%"
+        />
+        <View>
+          <Shimmering
+            borderRadius={8}
+            height={14}
+            width="35%"
+          />
+          <Shimmering
+            borderRadius={8}
+            height={14}
+            width="50%"
+          />
+          <Shimmering
+            borderRadius={8}
+            height={14}
+            width="25%"
+          />
+          <Shimmering
+            borderRadius={8}
+            height={14}
+            width="45%"
+          />
+          <Shimmering
+            borderRadius={8}
+            height={14}
+            width="80%"
+          />
+        </View>
+      </View>
+      <View>
+        <Shimmering
+          borderRadius={8}
+          height={24}
+          width="35%"
+        />
+        <View />
+      </View>
+      <View>
+        <GeneralText>
+          Products You May Like
+        </GeneralText>
+        <FlatList
+          data={
+            [
+              1,
+              2,
+              3,
+            ]
+          }
+          horizontal={true}
+          renderItem={[Function]}
+          showsHorizontalScrollIndicator={false}
+          testID="mock-flat-list"
+        >
+          <Card-Product
+            isLoading={true}
+            onPress={[Function]}
+          />
+          <Card-Product
+            isLoading={true}
+            onPress={[Function]}
+          />
+          <Card-Product
+            isLoading={true}
+            onPress={[Function]}
+          />
+        </FlatList>
+      </View>
+    </View>
+  </ScrollView>,
+  <View>
+    <Shimmering
+      borderRadius={60}
+      height={48}
+      width="15%"
+    />
+    <Shimmering
+      borderRadius={60}
+      height={48}
+      width="80%"
+    />
+  </View>,
+  <Bottom-Sheet
+    onCloseBottomSheet={[MockFunction]}
+    sheetColor="#558cc3ff"
+    show={false}
+    snapPoints={
+      [
+        "80%",
+      ]
+    }
+  >
+    <Reload-Screen
+      onReload={[MockFunction]}
+      secondButtonOnPress={[MockFunction]}
+    />
+  </Bottom-Sheet>,
+]
+`;
+
+exports[`Detail Screen Component Snapshots should match snapshot with standard loaded product data 1`] = `
+[
+  <ScrollView
+    ref={null}
+  >
+    <Image-Slider
+      autoPlayInterval={3500}
+      data={
+        {
+          "availabilityStatus": "In Stock",
+          "brand": "LogiTech",
+          "category": "electronics",
+          "description": "A comfortable ergonomic mouse designed for long working hours.",
+          "dimensions": {
+            "depth": 12,
+            "height": 4.2,
+            "width": 8.5,
+          },
+          "discountPercentage": 15.5,
+          "id": 1,
+          "images": [
+            "https://assets.example.com/images/1-1.png",
+          ],
+          "meta": {
+            "barcode": "123",
+            "createdAt": "2026-01-01",
+            "qrCode": "abc",
+            "updatedAt": "2026-05-01",
+          },
+          "minimumOrderQuantity": 1,
+          "price": 299900,
+          "rating": 4.8,
+          "returnPolicy": "30-day return",
+          "reviews": [],
+          "shippingInformation": "Ships in 2 days",
+          "sku": "LOG-WEM-001",
+          "stock": 45,
+          "tags": [
+            "electronics",
+            "accessories",
+          ],
+          "thumbnail": "https://assets.example.com/images/1-thumb.png",
+          "title": "Wireless Ergonomic Mouse",
+          "warrantyInformation": "1 Year Warranty",
+          "weight": 120,
+        }
+      }
+      isLoading={false}
+    />
+    <View>
+      <GeneralText>
+        Wireless Ergonomic Mouse
+      </GeneralText>
+      <View>
+        <MockIonIcon
+          color="#FBBF24"
+          name="star"
+          size={12}
+          testID="icon-star"
+        />
+        <GeneralText>
+          4.8
+        </GeneralText>
+        <GeneralText>
+          (
+          0
+           reviews)
+        </GeneralText>
+      </View>
+      <View>
+        <GeneralText>
+          $
+          299900
+        </GeneralText>
+        <GeneralText>
+          $
+          346384.5
+        </GeneralText>
+        <Badge-Component
+          backgroundColor="rgba(0, 86, 148, 0.6)"
+          color="#FFFFFF"
+          text="15.5%"
+        />
+      </View>
+      <View>
+        <Badge-Component
+          backgroundColor="#EDEDED"
+          color="#777777"
+          text="ELECTRONICS"
+        />
+        <Badge-Component
+          backgroundColor="#EDEDED"
+          color="#777777"
+          text="ACCESSORIES"
+        />
+      </View>
+      <View>
+        <View>
+          <View>
+            <MockIonIcon
+              color="#adadadff"
+              name="shield-checkmark-outline"
+              size={18}
+              testID="icon-shield-checkmark-outline"
+            />
+            <GeneralText
+              style={
+                [
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Warranty
+              : 
+              1 Year Warranty
+            </GeneralText>
+          </View>
+          <View>
+            <MockIonIcon
+              color="#adadadff"
+              name="cube-outline"
+              size={18}
+              testID="icon-cube-outline"
+            />
+            <GeneralText
+              style={
+                [
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Shipping
+              : 
+              Ships in 2 days
+            </GeneralText>
+          </View>
+          <View>
+            <MockIonIcon
+              color="#10B981"
+              name="checkmark-circle-outline"
+              size={18}
+              testID="icon-checkmark-circle-outline"
+            />
+            <GeneralText
+              style={
+                [
+                  undefined,
+                  {
+                    "color": "#10B981",
+                  },
+                ]
+              }
+            >
+              Status
+              : 
+              In Stock
+            </GeneralText>
+          </View>
+        </View>
+      </View>
+      <View>
+        <GeneralText>
+          Description
+        </GeneralText>
+        <GeneralText>
+          A comfortable ergonomic mouse designed for long working hours.
+        </GeneralText>
+      </View>
+      <View>
+        <GeneralText>
+          Reviews
+        </GeneralText>
+        <View />
+      </View>
+      <View>
+        <GeneralText>
+          Products You May Like
+        </GeneralText>
+        <FlatList
+          data={[]}
+          horizontal={true}
+          renderItem={[Function]}
+          showsHorizontalScrollIndicator={false}
+          testID="mock-flat-list"
+        />
+      </View>
+    </View>
+  </ScrollView>,
+  <View>
+    <Button-UI-KIT
+      onPress={[Function]}
+      testID="mock-button"
+    >
+      Icon: heart-outline
+    </Button-UI-KIT>
+    <Button-UI-KIT
+      onPress={[Function]}
+      testID="mock-button"
+    >
+      Custom Element
+    </Button-UI-KIT>
+  </View>,
+  <Bottom-Sheet
+    onCloseBottomSheet={[MockFunction]}
+    sheetColor="#558cc3ff"
+    show={false}
+    snapPoints={
+      [
+        "80%",
+      ]
+    }
+  >
+    <Reload-Screen
+      onReload={[MockFunction]}
+      secondButtonOnPress={[MockFunction]}
+    />
+  </Bottom-Sheet>,
+]
+`;

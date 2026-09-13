@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { FlatList, RefreshControl, ScrollView, View, type TextStyle } from 'react-native';
+import { FlatList, RefreshControl, ScrollView, View } from 'react-native';
 
-import Ionicons, { type IoniconsIconName } from '@react-native-vector-icons/ionicons';
-import { get, noop } from 'lodash';
+import Ionicons from '@react-native-vector-icons/ionicons';
+import { get, isUndefined, noop } from 'lodash';
 
 import ButtonComponent from '@Neurogine/ui-kit-button';
-import GeneralText from '@Neurogine/ui-kit-general-text';
-import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
+import GeneralText, { Constants } from '@Neurogine/ui-kit-general-text';
 
 import styles from './DetailsScreen.styles';
 import BadgeTextComponent from '../../Components/Badge';
@@ -23,6 +22,7 @@ import { mapProductToTwoSlides } from '../../Utils/Data/Data.utils';
 import type { DetailScreenComponentProps, InfoItem } from './DetailScreen.types';
 import type { ProductType, ReviewProductType, VoidFunction } from '../../Types';
 
+const { VARIANT } = Constants;
 const STAR_SIZE = 12;
 
 const _renderImageSlide = (
@@ -112,17 +112,18 @@ export const _renderTags = (tags: string[], isLoading: boolean) => (
         <Skeleton borderRadius={8} height={32} width={60} />
       </React.Fragment>
     ) : (
-      <React.Fragment>
-        {tags.map((tag) => (
-          <BadgeTextComponent
-            key={tag}
-            backgroundColor="#EDEDED"
-            color="#777777"
-            style={styles.tagsBadge}
-            text={tag.toUpperCase()}
-          />
-        ))}
-      </React.Fragment>
+      !isUndefined(tags) &&(
+        <React.Fragment>
+          {tags.map((tag) => (
+            <BadgeTextComponent
+              key={tag}
+              backgroundColor="#EDEDED"
+              color="#777777"
+              style={styles.tagsBadge}
+              text={tag.toUpperCase()}
+            />
+          ))}
+        </React.Fragment>)
     )}
   </View>
 );
@@ -148,6 +149,7 @@ const _renderShippingAndStatus = (
   availabilityStatus: string,
   isLoading: boolean,
 ): React.ReactNode => {
+
   const items = _getShippingItems(
     warrantyInformation,
     shippingInformation,
@@ -175,7 +177,7 @@ const _renderShippingAndStatus = (
   );
 };
 
-export const _renderDescription = (description: string,  isLoading: boolean) => (
+export const _renderDescription = (description: string, isLoading: boolean) => (
   <View style={styles.descriptionWrapper}>
     {isLoading ? (
       <Skeleton borderRadius={8} height={24} width="35%" />
@@ -217,7 +219,7 @@ const _renderReview = (reviews: ReviewProductType[], isLoading: boolean) => (
   </View>
 );
 
-export const _renderProductSuggestion = (products: ProductType[], isLoading: boolean, selectProductSuggestion) => (
+export const _renderProductSuggestion = (products: ProductType[], isLoading: boolean, selectProductSuggestion: (id: string) => void) => (
   <View style={styles.productSuggestionWrapper}>
     <GeneralText style={styles.productSuggestionTitle} variant={VARIANT.HEADLINE3}>
       Products You May Like
@@ -227,15 +229,16 @@ export const _renderProductSuggestion = (products: ProductType[], isLoading: boo
       data={isLoading ? [1, 2, 3] : products}
       horizontal
       keyExtractor={(item, index) =>
-        isLoading ? `skeleton-${index}` : (item as ProductType).id.toString()
+        isLoading ? `skeleton-${index}` : (item as ProductType)?.id?.toString()
       }
       renderItem={({ item }) => (
         <CardProduct
           isLoading={isLoading}
-          onPress={(p) => selectProductSuggestion(p.id)}
+          onPress={(p) => selectProductSuggestion(p?.id)}
           product={isLoading ? undefined : (item as ProductType)}
         />
-      )}
+      )
+      }
       showsHorizontalScrollIndicator={false}
     />
   </View>
@@ -326,5 +329,7 @@ const DetailScreenComponent = ({
     {_renderBottomSheet(showBottomSheet, refetch, goBack, onModalHide)}
   </React.Fragment>
 );
+
+DetailScreenComponent.displayName = 'DetailScreenComponent';
 
 export default DetailScreenComponent;

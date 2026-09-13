@@ -23,14 +23,15 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-import GeneralText from '@Neurogine/ui-kit-general-text';
-import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
+import GeneralText, { Constants } from '@Neurogine/ui-kit-general-text';
 
 import { ITEM_WIDTH, SLIDER_HEIGHT } from './ImageSlider.component.configs';
 import styles from './ImageSlider.component.styles';
 import Skeleton from '../Shimmering/Shimmering.component';
 
 import type { ExtendedImageSliderProps, PaginationProps, SlideItemProps, SliderItem } from './ImageSlider.component.types';
+
+const { VARIANT } = Constants;
 
 /**
  * generate slide next index
@@ -177,7 +178,7 @@ const _gerFlatListProps = (
   showsHorizontalScrollIndicator: false,
 });
 
-export const ImageSlider: React.FC<ExtendedImageSliderProps> = ({
+const ImageSlider: React.FC<ExtendedImageSliderProps> = ({
   data = [],
   autoPlayInterval = 4000,
   isLoading = false,

@@ -44,4 +44,4 @@ const DetailsScreen: React.FC<DetailScreenProps> = ({ route, navigation }) => {
 
 DetailsScreen.displayName = 'DetailScreen';
 
-export default React.memo(DetailsScreen);
+export default DetailsScreen;

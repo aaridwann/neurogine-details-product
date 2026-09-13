@@ -2,12 +2,13 @@ import React from 'react';
 
 import { View } from 'react-native';
 
-import GeneralText from '@Neurogine/ui-kit-general-text';
-import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
+import GeneralText, { Constants } from '@Neurogine/ui-kit-general-text';
 
 import styles from './Badge.component.styles';
 
 import type { BadgeTextComponentProps } from './Badge.component.types';
+
+const { VARIANT } = Constants;
 
 /**
  * BadgeTextComponent is a component that displays a badge with text.

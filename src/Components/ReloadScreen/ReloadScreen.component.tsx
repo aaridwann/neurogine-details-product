@@ -11,14 +11,15 @@ import Animated, {
   type SharedValue,
 } from 'react-native-reanimated';
 
-import GeneralText from '@Neurogine/ui-kit-general-text';
-import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
+import GeneralText, { Constants } from '@Neurogine/ui-kit-general-text';
 
 import styles from './ReloadScreen.component.styles';
 import RefreshLottie from '../../Assets/Lottie/Refresh.json';
 
 import type { ReloadButtonProps, ReloadScreenProps } from './ReloadScreen.component.types';
 import type { VoidFunction } from '../../Types';
+
+const { VARIANT } = Constants;
 
 /**
  * render Lottie Animation

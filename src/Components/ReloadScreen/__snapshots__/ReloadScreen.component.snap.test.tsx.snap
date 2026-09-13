@@ -1,0 +1,2014 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reload Screen Component Snapshots should match snapshot with all props provided 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceName="assets/animations/error-state.json"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Terjadi Kesalahan Sistem
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Layanan kami sedang dalam pemeliharaan berkala. Silakan coba beberapa saat lagi.
+      </GeneralText>
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Muat Ulang Halaman
+        </GeneralText>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Hubungi Customer Care
+        </GeneralText>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Reload Screen Component Snapshots should match snapshot with custom lottie animation source path 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceName="assets/animations/no-connection.json"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Connection is broken
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Failed to load data. Please check your internet connection and try again.
+      </GeneralText>
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Try again
+        </GeneralText>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Back
+        </GeneralText>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Reload Screen Component Snapshots should match snapshot with custom primary button text 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceJson="{"v":"5.4.2","fr":50,"ip":0,"op":100,"w":1920,"h":1920,"nm":"sync-button","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"arrow","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[75.188,75.188,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[63.733,150],[-150,150],[-150,-70.804]],"c":false},"ix":2},"nm":"Caminho 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":150,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[-664,-26],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":-45,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"arrow","np":2,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"circle","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[116.9,7.085,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[998.967,998.967],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Caminho da elipse 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"tm","s":{"a":0,"k":0,"ix":1},"e":{"a":1,"k":[{"i":{"x":[0.339],"y":[1]},"o":{"x":[0.715],"y":[0]},"n":["0p339_1_0p715_0"],"t":0,"s":[75],"e":[50]},{"i":{"x":[0.332],"y":[1]},"o":{"x":[0.613],"y":[0]},"n":["0p332_1_0p613_0"],"t":50,"s":[50],"e":[75]},{"t":100}],"ix":2},"o":{"a":0,"k":-90,"ix":3},"m":1,"ix":2,"nm":"trim","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":120,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[116.9,7.085],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"circle","np":3,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":3,"nm":"root","sr":1,"ks":{"o":{"a":0,"k":0,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.321],"y":[1]},"o":{"x":[0.693],"y":[0.119]},"n":["0p321_1_0p693_0p119"],"t":0,"s":[0],"e":[-360]},{"t":100}],"ix":10},"p":{"a":0,"k":[960,960,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[133,133,100],"ix":6}},"ao":0,"ip":0,"op":100,"st":0,"bm":0}],"markers":[]}"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Connection is broken
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Failed to load data. Please check your internet connection and try again.
+      </GeneralText>
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Coba Lagi
+        </GeneralText>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Back
+        </GeneralText>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Reload Screen Component Snapshots should match snapshot with custom title and description 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceJson="{"v":"5.4.2","fr":50,"ip":0,"op":100,"w":1920,"h":1920,"nm":"sync-button","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"arrow","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[75.188,75.188,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[63.733,150],[-150,150],[-150,-70.804]],"c":false},"ix":2},"nm":"Caminho 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":150,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[-664,-26],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":-45,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"arrow","np":2,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"circle","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[116.9,7.085,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[998.967,998.967],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Caminho da elipse 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"tm","s":{"a":0,"k":0,"ix":1},"e":{"a":1,"k":[{"i":{"x":[0.339],"y":[1]},"o":{"x":[0.715],"y":[0]},"n":["0p339_1_0p715_0"],"t":0,"s":[75],"e":[50]},{"i":{"x":[0.332],"y":[1]},"o":{"x":[0.613],"y":[0]},"n":["0p332_1_0p613_0"],"t":50,"s":[50],"e":[75]},{"t":100}],"ix":2},"o":{"a":0,"k":-90,"ix":3},"m":1,"ix":2,"nm":"trim","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":120,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[116.9,7.085],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"circle","np":3,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":3,"nm":"root","sr":1,"ks":{"o":{"a":0,"k":0,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.321],"y":[1]},"o":{"x":[0.693],"y":[0.119]},"n":["0p321_1_0p693_0p119"],"t":0,"s":[0],"e":[-360]},{"t":100}],"ix":10},"p":{"a":0,"k":[960,960,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[133,133,100],"ix":6}},"ao":0,"ip":0,"op":100,"st":0,"bm":0}],"markers":[]}"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Koneksi Terputus
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Periksa kembali jaringan internet Anda dan coba muat ulang halaman ini.
+      </GeneralText>
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Try again
+        </GeneralText>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Back
+        </GeneralText>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Reload Screen Component Snapshots should match snapshot with empty string values in optional props 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceJson="{"v":"5.4.2","fr":50,"ip":0,"op":100,"w":1920,"h":1920,"nm":"sync-button","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"arrow","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[75.188,75.188,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[63.733,150],[-150,150],[-150,-70.804]],"c":false},"ix":2},"nm":"Caminho 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":150,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[-664,-26],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":-45,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"arrow","np":2,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"circle","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[116.9,7.085,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[998.967,998.967],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Caminho da elipse 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"tm","s":{"a":0,"k":0,"ix":1},"e":{"a":1,"k":[{"i":{"x":[0.339],"y":[1]},"o":{"x":[0.715],"y":[0]},"n":["0p339_1_0p715_0"],"t":0,"s":[75],"e":[50]},{"i":{"x":[0.332],"y":[1]},"o":{"x":[0.613],"y":[0]},"n":["0p332_1_0p613_0"],"t":50,"s":[50],"e":[75]},{"t":100}],"ix":2},"o":{"a":0,"k":-90,"ix":3},"m":1,"ix":2,"nm":"trim","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":120,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[116.9,7.085],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"circle","np":3,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":3,"nm":"root","sr":1,"ks":{"o":{"a":0,"k":0,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.321],"y":[1]},"o":{"x":[0.693],"y":[0.119]},"n":["0p321_1_0p693_0p119"],"t":0,"s":[0],"e":[-360]},{"t":100}],"ix":10},"p":{"a":0,"k":[960,960,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[133,133,100],"ix":6}},"ao":0,"ip":0,"op":100,"st":0,"bm":0}],"markers":[]}"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      />
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Reload Screen Component Snapshots should match snapshot with extremely long title, description, and button labels 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceJson="{"v":"5.4.2","fr":50,"ip":0,"op":100,"w":1920,"h":1920,"nm":"sync-button","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"arrow","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[75.188,75.188,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[63.733,150],[-150,150],[-150,-70.804]],"c":false},"ix":2},"nm":"Caminho 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":150,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[-664,-26],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":-45,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"arrow","np":2,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"circle","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[116.9,7.085,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[998.967,998.967],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Caminho da elipse 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"tm","s":{"a":0,"k":0,"ix":1},"e":{"a":1,"k":[{"i":{"x":[0.339],"y":[1]},"o":{"x":[0.715],"y":[0]},"n":["0p339_1_0p715_0"],"t":0,"s":[75],"e":[50]},{"i":{"x":[0.332],"y":[1]},"o":{"x":[0.613],"y":[0]},"n":["0p332_1_0p613_0"],"t":50,"s":[50],"e":[75]},{"t":100}],"ix":2},"o":{"a":0,"k":-90,"ix":3},"m":1,"ix":2,"nm":"trim","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":120,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[116.9,7.085],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"circle","np":3,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":3,"nm":"root","sr":1,"ks":{"o":{"a":0,"k":0,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.321],"y":[1]},"o":{"x":[0.693],"y":[0.119]},"n":["0p321_1_0p693_0p119"],"t":0,"s":[0],"e":[-360]},{"t":100}],"ix":10},"p":{"a":0,"k":[960,960,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[133,133,100],"ix":6}},"ao":0,"ip":0,"op":100,"st":0,"bm":0}],"markers":[]}"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Judul Error Sangat Panjang Untuk Menguji Penataan Layout Dan Wraparound Teks Pada Layar Reload
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Deskripsi detail pesan kesalahan yang sangat panjang untuk memastikan komponen teks dapat merender beberapa baris kalimat tanpa terpotong atau merusak posisi tombol di bagian bawah.
+      </GeneralText>
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Muat Ulang Seluruh Data Aplikasi Sekarang
+        </GeneralText>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Navigasi Kembali Ke Pusat Bantuan Dan Layanan Pelanggan
+        </GeneralText>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Reload Screen Component Snapshots should match snapshot with minimal required props (onReload and navigation) 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceJson="{"v":"5.4.2","fr":50,"ip":0,"op":100,"w":1920,"h":1920,"nm":"sync-button","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"arrow","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[75.188,75.188,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[63.733,150],[-150,150],[-150,-70.804]],"c":false},"ix":2},"nm":"Caminho 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":150,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[-664,-26],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":-45,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"arrow","np":2,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"circle","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[116.9,7.085,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[998.967,998.967],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Caminho da elipse 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"tm","s":{"a":0,"k":0,"ix":1},"e":{"a":1,"k":[{"i":{"x":[0.339],"y":[1]},"o":{"x":[0.715],"y":[0]},"n":["0p339_1_0p715_0"],"t":0,"s":[75],"e":[50]},{"i":{"x":[0.332],"y":[1]},"o":{"x":[0.613],"y":[0]},"n":["0p332_1_0p613_0"],"t":50,"s":[50],"e":[75]},{"t":100}],"ix":2},"o":{"a":0,"k":-90,"ix":3},"m":1,"ix":2,"nm":"trim","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":120,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[116.9,7.085],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"circle","np":3,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":3,"nm":"root","sr":1,"ks":{"o":{"a":0,"k":0,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.321],"y":[1]},"o":{"x":[0.693],"y":[0.119]},"n":["0p321_1_0p693_0p119"],"t":0,"s":[0],"e":[-360]},{"t":100}],"ix":10},"p":{"a":0,"k":[960,960,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[133,133,100],"ix":6}},"ao":0,"ip":0,"op":100,"st":0,"bm":0}],"markers":[]}"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Connection is broken
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Failed to load data. Please check your internet connection and try again.
+      </GeneralText>
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Try again
+        </GeneralText>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Back
+        </GeneralText>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Reload Screen Component Snapshots should match snapshot with second button text and onPress handler 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceJson="{"v":"5.4.2","fr":50,"ip":0,"op":100,"w":1920,"h":1920,"nm":"sync-button","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"arrow","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[75.188,75.188,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[63.733,150],[-150,150],[-150,-70.804]],"c":false},"ix":2},"nm":"Caminho 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":150,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[-664,-26],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":-45,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"arrow","np":2,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"circle","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[116.9,7.085,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[998.967,998.967],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Caminho da elipse 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"tm","s":{"a":0,"k":0,"ix":1},"e":{"a":1,"k":[{"i":{"x":[0.339],"y":[1]},"o":{"x":[0.715],"y":[0]},"n":["0p339_1_0p715_0"],"t":0,"s":[75],"e":[50]},{"i":{"x":[0.332],"y":[1]},"o":{"x":[0.613],"y":[0]},"n":["0p332_1_0p613_0"],"t":50,"s":[50],"e":[75]},{"t":100}],"ix":2},"o":{"a":0,"k":-90,"ix":3},"m":1,"ix":2,"nm":"trim","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":120,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[116.9,7.085],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"circle","np":3,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":3,"nm":"root","sr":1,"ks":{"o":{"a":0,"k":0,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.321],"y":[1]},"o":{"x":[0.693],"y":[0.119]},"n":["0p321_1_0p693_0p119"],"t":0,"s":[0],"e":[-360]},{"t":100}],"ix":10},"p":{"a":0,"k":[960,960,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[133,133,100],"ix":6}},"ao":0,"ip":0,"op":100,"st":0,"bm":0}],"markers":[]}"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Connection is broken
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Failed to load data. Please check your internet connection and try again.
+      </GeneralText>
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Try again
+        </GeneralText>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Kembali ke Beranda
+        </GeneralText>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Reload Screen Component Snapshots should match snapshot with second button text only without secondButtonOnPress 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#558cc3ff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "maxWidth": 320,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "height": 200,
+          "justifyContent": "center",
+          "width": 200,
+        }
+      }
+    >
+      <LottieAnimationView
+        applyOpacityToLayersAndroid={false}
+        autoPlay={true}
+        cacheComposition={true}
+        colorFilters={[]}
+        enableMergePathsAndroidForKitKatAndAbove={false}
+        enableSafeModeAndroid={false}
+        loop={true}
+        onAnimationFailure={[Function]}
+        onAnimationFinish={[Function]}
+        onAnimationLoaded={[Function]}
+        progress={0}
+        resizeMode="contain"
+        sourceJson="{"v":"5.4.2","fr":50,"ip":0,"op":100,"w":1920,"h":1920,"nm":"sync-button","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"arrow","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[75.188,75.188,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[63.733,150],[-150,150],[-150,-70.804]],"c":false},"ix":2},"nm":"Caminho 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":150,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[-664,-26],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":-45,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"arrow","np":2,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"circle","parent":3,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[0,0,0],"ix":2},"a":{"a":0,"k":[116.9,7.085,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[998.967,998.967],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Caminho da elipse 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"tm","s":{"a":0,"k":0,"ix":1},"e":{"a":1,"k":[{"i":{"x":[0.339],"y":[1]},"o":{"x":[0.715],"y":[0]},"n":["0p339_1_0p715_0"],"t":0,"s":[75],"e":[50]},{"i":{"x":[0.332],"y":[1]},"o":{"x":[0.613],"y":[0]},"n":["0p332_1_0p613_0"],"t":50,"s":[50],"e":[75]},{"t":100}],"ix":2},"o":{"a":0,"k":-90,"ix":3},"m":1,"ix":2,"nm":"trim","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":120,"ix":5},"lc":2,"lj":2,"nm":"TraÃ§ado 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[116.9,7.085],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transformar"}],"nm":"circle","np":3,"cix":2,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":100,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":3,"nm":"root","sr":1,"ks":{"o":{"a":0,"k":0,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.321],"y":[1]},"o":{"x":[0.693],"y":[0.119]},"n":["0p321_1_0p693_0p119"],"t":0,"s":[0],"e":[-360]},{"t":100}],"ix":10},"p":{"a":0,"k":[960,960,0],"ix":2},"a":{"a":0,"k":[0,0,0],"ix":1},"s":{"a":0,"k":[133,133,100],"ix":6}},"ao":0,"ip":0,"op":100,"st":0,"bm":0}],"markers":[]}"
+        speed={1}
+        style={
+          {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "gap": 8,
+          "marginTop": 16,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontWeight": "700",
+            "textAlign": "center",
+          }
+        }
+      >
+        Connection is broken
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#e9e9e9ff",
+            "lineHeight": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        Failed to load data. Please check your internet connection and try again.
+      </GeneralText>
+    </View>
+    <View
+      style={
+        [
+          {
+            "gap": 8,
+            "marginTop": 32,
+            "width": "100%",
+          },
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Try again
+        </GeneralText>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255, 255, 255, 0.85)",
+            "borderRadius": 12,
+            "elevation": 4,
+            "justifyContent": "center",
+            "paddingVertical": 14,
+            "shadowColor": "rgba(0, 86, 148, 0.4)",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 8,
+          }
+        }
+      >
+        <GeneralText
+          style={
+            {
+              "color": "#426e9bff",
+              "fontWeight": "600",
+              "letterSpacing": 0.3,
+            }
+          }
+        >
+          Bantuan
+        </GeneralText>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -11,7 +11,7 @@ import type { NativeStackNavigationOptions, NativeStackScreenProps } from '@reac
  */
 export interface ScreenConfig<T extends keyof DetailFeatureParamList> {
     name: T;
-    component: ComponentType<NativeStackScreenProps<ParamListBase, T>>;
+    component: ComponentType<NativeStackScreenProps<ParamListBase, string>>;
     options?: NativeStackNavigationOptions;
 }
 //# sourceMappingURL=ScreemConfigs.types.d.ts.map

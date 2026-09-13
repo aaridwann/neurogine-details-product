@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 
-import { StyleSheet, type ViewStyle } from 'react-native';
-
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
@@ -10,14 +8,11 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-export interface SkeletonProps {
-  width?: number | `${number}%`;
-  height?: number;
-  borderRadius?: number;
-  style?: ViewStyle;
-}
+import styles from './Shimmering.component.styles';
 
-export const Skeleton: React.FC<SkeletonProps> = ({
+import type { SkeletonProps } from './Shimmering.component.types';
+
+const Skeleton: React.FC<SkeletonProps> = ({
   width = '100%',
   height = 16,
   borderRadius = 4,
@@ -55,11 +50,5 @@ export const Skeleton: React.FC<SkeletonProps> = ({
     />
   );
 };
-
-const styles = StyleSheet.create({
-  skeleton: {
-    backgroundColor: '#b8c0c9ff',
-  },
-});
 
 export default Skeleton;

@@ -15,7 +15,7 @@ const useProductDetail = (id: string) => {
 
   const query = useQuery({
     queryKey: ['product-detail', id],
-    queryFn: () => fetchProductsDetail(0),
+    queryFn: () => fetchProductsDetail(id),
     enabled: Boolean(id),
   });
 

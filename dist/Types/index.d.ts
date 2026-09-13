@@ -2,11 +2,11 @@ import type { ParamListBase } from '@react-navigation/native';
 import type { NativeStackNavigationProp, NativeStackScreenProps } from '@react-navigation/native-stack';
 export interface DetailFeatureParamList extends Record<string, object | undefined> {
     DetailScreen: {
-        itemId: number;
+        id?: string;
         title?: string;
     } | undefined;
 }
-export type DetailScreenProps = NativeStackScreenProps<DetailFeatureParamList, 'DetailScreen'>;
+export type DetailScreenProps = NativeStackScreenProps<DetailFeatureParamList, string>;
 export type VoidFunction = () => void;
 export interface ReviewProductType {
     rating: number;

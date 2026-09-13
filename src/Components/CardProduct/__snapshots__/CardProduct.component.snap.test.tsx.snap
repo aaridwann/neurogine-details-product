@@ -1,0 +1,1793 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Product Component Snapshots should match snapshot when isLoading is false without product 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#E2E8F0",
+          "height": 140,
+          "width": "100%",
+        },
+        {
+          "opacity": 0.3,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 8,
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 10,
+            "width": 60,
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 12,
+            "width": "100%",
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 14,
+            "width": 80,
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot when isLoading is true 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#E2E8F0",
+          "height": 140,
+          "width": "100%",
+        },
+        {
+          "opacity": 0.3,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 8,
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 10,
+            "width": 60,
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 12,
+            "width": "100%",
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 14,
+            "width": 80,
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot with 100% discount percentage 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      style={
+        {
+          "color": "#94A3B8",
+          "fontSize": 10,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Brand Name
+    </GeneralText>
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Product Title Standard
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        150000.00
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "fontSize": 10,
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        $
+        300000.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        4.5
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot with complete product data and discount 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      style={
+        {
+          "color": "#94A3B8",
+          "fontSize": 10,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Brand Name
+    </GeneralText>
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Product Title Standard
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        150000.00
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "fontSize": 10,
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        $
+        172500.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        4.5
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot with complete product data and onPress callback 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      style={
+        {
+          "color": "#94A3B8",
+          "fontSize": 10,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Brand Name
+    </GeneralText>
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Product Title Standard
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        150000.00
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "fontSize": 10,
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        $
+        172500.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        4.5
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot with default empty props 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#E2E8F0",
+          "height": 140,
+          "width": "100%",
+        },
+        {
+          "opacity": 0.3,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 8,
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 10,
+            "width": 60,
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 12,
+            "width": "100%",
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#E2E8F0",
+            "borderRadius": 4,
+            "height": 14,
+            "width": 80,
+          },
+          {
+            "opacity": 0.3,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot with long product title and long brand name 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      style={
+        {
+          "color": "#94A3B8",
+          "fontSize": 10,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Super Extra Long Brand Name International Official Store
+    </GeneralText>
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Very Long Product Title That Should Test Text Truncation Or Wrapping Behavior In Card
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        150000.00
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "fontSize": 10,
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        $
+        172500.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        4.5
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot with maximum rating 5 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      style={
+        {
+          "color": "#94A3B8",
+          "fontSize": 10,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Brand Name
+    </GeneralText>
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Product Title Standard
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        150000.00
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "fontSize": 10,
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        $
+        172500.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        5.0
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot with minimum rating 0 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      style={
+        {
+          "color": "#94A3B8",
+          "fontSize": 10,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Brand Name
+    </GeneralText>
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Product Title Standard
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        150000.00
+      </GeneralText>
+      <GeneralText
+        style={
+          {
+            "color": "#94A3B8",
+            "fontSize": 10,
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        $
+        172500.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        0.0
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot with zero price and zero discount 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      style={
+        {
+          "color": "#94A3B8",
+          "fontSize": 10,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Brand Name
+    </GeneralText>
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Product Title Standard
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        0.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        4.5
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot without both brand and discountPercentage 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail4.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Minimal Product Item
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        99000.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        3.5
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot without optional brand property 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail2.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Product Without Brand
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        200000.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        4.0
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Card Product Component Snapshots should match snapshot without optional discountPercentage property 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#F1F5F9",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "overflow": "hidden",
+      "width": 160,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://example.com/thumbnail3.jpg",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#F8FAFC",
+        "height": 140,
+        "width": "100%",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "gap": 3,
+        "padding": 10,
+      }
+    }
+  >
+    <GeneralText
+      style={
+        {
+          "color": "#94A3B8",
+          "fontSize": 10,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Brand B
+    </GeneralText>
+    <GeneralText
+      numberOfLines={1}
+      style={
+        {
+          "color": "#0F172A",
+          "fontWeight": "600",
+        }
+      }
+    >
+      Product Without Discount
+    </GeneralText>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 6,
+          "marginTop": 2,
+        }
+      }
+    >
+      <GeneralText
+        style={
+          {
+            "color": "#0F172A",
+            "fontWeight": "700",
+          }
+        }
+      >
+        $
+        300000.00
+      </GeneralText>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 3,
+          "marginTop": 2,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#F59E0B",
+              "fontSize": 12,
+            },
+            undefined,
+          ]
+        }
+        testID="icon-star"
+      >
+        Icon: star
+      </Text>
+      <GeneralText
+        style={
+          {
+            "color": "#475569",
+            "fontSize": 11,
+            "fontWeight": "600",
+          }
+        }
+      >
+        5.0
+      </GeneralText>
+    </View>
+  </View>
+</View>
+`;
