@@ -13,9 +13,3 @@ export interface CardProductProps {
   isLoading?: boolean;
   onPress?: (product: ProductItem) => void;
 }
-
-export const calcOriginalPrice = (price: number, discount = 0): string => {
-  if (discount <= 0) return '';
-
-  return (price * (1 + discount / 100)).toFixed(2);
-};

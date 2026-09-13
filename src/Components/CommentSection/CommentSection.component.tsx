@@ -1,49 +1,35 @@
-import React from 'react';
+import React, { type ReactNode } from 'react';
 
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 
 import Ionicons from '@react-native-vector-icons/ionicons';
 
 import GeneralText from '@Neurogine/ui-kit-general-text';
 import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
 
+import styles from './CommentSection.component.styles';
+import { formatDate } from '../../Utils/Data/Data.utils';
 import Skeleton from '../Shimmering/Shimmering.component';
 
-export interface Review {
-  rating: number;
-  comment: string;
-  date: string;
-  reviewerName: string;
-  reviewerEmail: string;
-}
-
-export interface CommentSectionProps {
-  reviews: Review[];
-}
+import type { ReviewProductType } from '../../Types';
 
 /**
- * Format ISO Date string ke format tanggal elegan (e.g. "30 Apr 2025")
+ * getAvatarInitial
+ * @param {string} name - inital name for avatar
+ * @returns {string} - initial name
  */
-export const formatDate = (dateString: string): string => {
-  const options: Intl.DateTimeFormatOptions = {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-  };
-
-  return new Date(dateString).toLocaleDateString('en-US', options);
-};
-
-/**
- * Mendapatkan inisial nama reviewer untuk Avatar Placeholder
- */
-export const getAvatarInitial = (name: string): string => {
+const getAvatarInitial = (name: string): string => {
   if (!name) return 'U';
 
   return name.charAt(0).toUpperCase();
 };
 
-export const RatingStars: React.FC<{ rating: number }> = ({ rating }) => (
+/**
+ * RatingStars
+ * @param {number} rating - rating star
+ * @returns {React.Component} - render stars
+ */
+const RatingStars: React.FC<{ rating: number }> = ({ rating }): ReactNode => (
   <View style={styles.starRow}>
     {[1, 2, 3, 4, 5].map((star) => (
       <Ionicons
@@ -56,11 +42,15 @@ export const RatingStars: React.FC<{ rating: number }> = ({ rating }) => (
   </View>
 );
 
-const _renderAvatar = (reviewerName: string, isLoading: boolean) => (
+/**
+ * Render Avatar
+ * @param {string} reviewerName - reviewe name
+ * @param {boolean} isLoading - Loading
+ * @returns {ReactNode} - Render Avatar
+ */
+const _renderAvatar = (reviewerName: string, isLoading: boolean): ReactNode => (
   <View style={styles.avatar}>
-    {isLoading ? (
-      <Skeleton width={36} height={36} borderRadius={18} />
-    ) : (
+    {isLoading ? (<Skeleton width={36} height={36} borderRadius={18} />) : (
       <GeneralText style={styles.avatarText} variant={VARIANT.LABEL3}>
         {getAvatarInitial(reviewerName)}
       </GeneralText>
@@ -68,39 +58,61 @@ const _renderAvatar = (reviewerName: string, isLoading: boolean) => (
   </View>
 );
 
-const _renderName = (reviewerName: string, date: string, isLoading: boolean) => (
+/**
+ * Render name and date
+ * @param {string} reviewerName - reviewe name
+ * @param {string} date - review date
+ * @param {boolean} isLoading - Loading
+ * @returns {ReactNode} - Render name and date
+ */
+const _renderName = (reviewerName: string, date: string, isLoading: boolean): ReactNode => (
   <View style={styles.authorInfo}>
     {isLoading ?
       <Skeleton style={{ marginBottom: 4 }} width={60} height={10} borderRadius={8} /> :
-
-      <GeneralText style={styles.authorName} variant={VARIANT.LABEL2}>
-        {reviewerName}
-      </GeneralText>}
-    {isLoading ?
-      <Skeleton width={'35%'} height={12} borderRadius={8} /> :
+      <GeneralText style={styles.authorName} variant={VARIANT.LABEL2}>{reviewerName}</GeneralText>}
+    {isLoading ? <Skeleton width={'35%'} height={12} borderRadius={8} /> :
       <GeneralText style={styles.dateText} variant={VARIANT.LABEL3}>
         {formatDate(date)}
       </GeneralText>}
-
   </View>
 );
 
-const _renderStars = (rating: number, isLoading: boolean) => (
-  <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+/**
+ * Render stars
+ * @param {number} rating - Rating count
+ * @param {boolean} isLoading - IsLoading
+ * @returns {ReactNode} - Render stars
+ */
+const _renderStars = (rating: number, isLoading: boolean): ReactNode => (
+  <View style={styles.starsWrapper}>
     {isLoading ?
       <Skeleton width={75} height={12} borderRadius={8} /> :
       <RatingStars rating={rating} />}
   </View>
 );
 
-const _renderComment = (comment: string, isLoading: boolean) => (
+/**
+ * Render comment
+ * @param {string} comment - Comment text
+ * @param {boolean} isLoading - IsLoading
+ * @returns {ReactNode} - Render comment
+ */
+const _renderComment = (comment: string, isLoading: boolean): ReactNode => (
   <GeneralText style={styles.commentText} variant={VARIANT.BODY2}>
-    {isLoading ? <Skeleton style={{ marginTop: 4 }} width={100} height={10} borderRadius={8} /> : comment}
+    {isLoading ?
+      <Skeleton style={{ marginTop: 4 }} width={100} height={10} borderRadius={8} /> : comment}
   </GeneralText>
 );
 
-export const ReviewCard: React.FC<{ review: Review, isLoading: boolean }> =
-  ({ review, isLoading }) => (
+/**
+ * ReviewCard
+ * @param {Object} props - The component props.
+ * @param {Object} props.review - The review object.
+ * @param {boolean} props.isLoading - IsLoading
+ * @returns {ReactNode} - Render review card
+ */
+export const ReviewCard: React.FC<{ review: ReviewProductType, isLoading: boolean }> =
+  ({ review, isLoading }): ReactNode => (
     <View style={styles.card}>
       <View style={styles.headerRow}>
         {_renderAvatar(review.reviewerName, isLoading)}
@@ -110,29 +122,3 @@ export const ReviewCard: React.FC<{ review: Review, isLoading: boolean }> =
       {_renderComment(review.comment, isLoading)}
     </View>
   );
-
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: '#F8FAFC',
-    borderColor: '#F1F5F9',
-    borderRadius: 12,
-    borderWidth: 1,
-    gap: 10,
-    padding: 14,
-  },
-  headerRow: { alignItems: 'center', flexDirection: 'row', gap: 10 },
-  avatar: {
-    alignItems: 'center',
-    backgroundColor: '#0F172A',
-    borderRadius: 18,
-    height: 36,
-    justifyContent: 'center',
-    width: 36,
-  },
-  avatarText: { color: '#FFFFFF', fontWeight: '700' },
-  authorInfo: { flex: 1 },
-  authorName: { color: '#0F172A', fontWeight: '600' },
-  dateText: { color: '#94A3B8', marginTop: 1 },
-  commentText: { color: '#334155', lineHeight: 20 },
-  starRow: { flexDirection: 'row', gap: 2 },
-});

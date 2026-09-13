@@ -10,9 +10,17 @@ import GorhomBottomSheet, {
 
 import styles from './BottomSheet.component.styles';
 
-import type { CustomBottomSheetProps as BaseProps, CustomBottomSheetProps, CustomBottomSheetRef, HeaderProps, PropsBottomSheet } from './BottomSheet.types';
-import type { BottomSheetMethods } from '@gorhom/bottom-sheet/lib/typescript/types';
+import type { CustomBottomSheetProps, CustomBottomSheetRef, HeaderProps, PropsBottomSheet } from './BottomSheet.types';
+import type { VoidFunction } from '../../Types';
 
+/**
+ * Render header component of bottom sheet
+ * @param {Object} props - The component props.
+ * @param {string} props.title - The title of the bottom sheet.
+ * @param {boolean} props.showCloseButton - Whether to show the close button.
+ * @param {Function} props.onClosePress - The function to call when the close button is pressed.
+ * @returns {React.Component} The header component.
+ */
 const _renderHeader = ({ title, showCloseButton, onClosePress }: HeaderProps): React.ReactNode =>
   (title || showCloseButton) && (
     <View style={styles.header}>
@@ -29,13 +37,23 @@ const _renderHeader = ({ title, showCloseButton, onClosePress }: HeaderProps): R
     </View>
   );
 
+/**
+ * Get props for bottom sheet
+ * @param {Object} props - The component props.
+ * @param {Object} props.bottomSheetRef - The bottom sheet ref.
+ * @param {Array} props.snapPoints - The snap points.
+ * @param {Function} props.renderBackdrop - The render backdrop function.
+ * @param {Function} props.onChange - The change function.
+ * @param {string} props.sheetColor - The sheet color.
+ * @returns {Object} The props for bottom sheet.
+ */
 const _getPropsBottomSheet = ({
   bottomSheetRef,
   snapPoints,
   renderBackdrop,
   onChange,
   sheetColor,
-}: PropsBottomSheet) => ({
+}: PropsBottomSheet): React.ComponentProps<typeof GorhomBottomSheet> => ({
   ref: bottomSheetRef,
   index: -1,
   snapPoints,
@@ -46,74 +64,71 @@ const _getPropsBottomSheet = ({
   onChange,
 });
 
-const CustomBottomSheet = forwardRef<CustomBottomSheetRef, CustomBottomSheetProps>(
-  (
-    {
-      show = false,
-      onClose,
-      onCloseBottomSheet,
-      onShowBottomSheet,
-      title,
-      snapPoints: customSnapPoints,
-      children,
-      showCloseButton = false,
-      sheetColor,
-      ...restProps
+/**
+ * handlerBottomSheetChanges
+ * @param {VoidFunction} onClose -
+ * @param {VoidFunction} onCloseBottomSheet
+ * @param {VoidFunction} onShowBottomSheet
+ * @returns {Function}
+ */
+const useSheetChanges = (
+  onClose?: VoidFunction,
+  onCloseBottomSheet?: VoidFunction,
+  onShowBottomSheet?: VoidFunction,
+) =>
+  useCallback(
+    (index: number) => {
+      if (index === -1) {
+        onClose?.();
+        onCloseBottomSheet?.();
+      } else {
+        onShowBottomSheet?.();
+      }
     },
-    ref,
-  ) => {
-    const bottomSheetRef = useRef<GorhomBottomSheet>(null);
-    const snapPoints = useMemo(() => customSnapPoints || ['50%', '85%'], [customSnapPoints]);
+    [onClose, onCloseBottomSheet, onShowBottomSheet],
+  );
 
-    useImperativeHandle(ref, () => bottomSheetRef.current!, []);
+const useSheetVisibility = (ref: React.RefObject<GorhomBottomSheet>, show: boolean) => {
+  useEffect(() => {
+    if (show) ref.current?.snapToIndex(0);
+    else ref.current?.close();
+  }, [show, ref]);
+};
 
-    useEffect(() => {
-      if (show) bottomSheetRef.current?.snapToIndex(0);
-      else bottomSheetRef.current?.close();
-    }, [show]);
+const useBackdropRenderer = () =>
+  useCallback((props: BottomSheetBackdropProps) => (
+    <BottomSheetBackdrop {...props} disappearsOnIndex={-1} appearsOnIndex={0} opacity={0.4} />
+  ), []);
 
-    const handleSheetChanges = useCallback(
-      (index: number) => {
-        if (index === -1) {
-          onClose?.();
-          onCloseBottomSheet?.();
-        } else {
-          onShowBottomSheet?.();
-        }
-      },
-      [onClose, onCloseBottomSheet, onShowBottomSheet],
-    );
+const CustomBottomSheet = forwardRef<CustomBottomSheetRef, CustomBottomSheetProps>((props, ref) => {
+  const {
+    show = false, onClose, onCloseBottomSheet, onShowBottomSheet,
+    title, snapPoints: customSnapPoints, children, showCloseButton = false, sheetColor, ...restProps
+  } = props;
 
-    const handleClosePress = useCallback(() => {
-      bottomSheetRef.current?.close();
-    }, []);
+  const bottomSheetRef = useRef<GorhomBottomSheet>(null);
+  const snapPoints = useMemo(() => customSnapPoints || ['50%', '85%'], [customSnapPoints]);
 
-    const renderBackdrop = useCallback(
-      (props: BottomSheetBackdropProps) => (
-        <BottomSheetBackdrop
-          {...props}
-          disappearsOnIndex={-1}
-          appearsOnIndex={0}
-          opacity={0.4}
-        />
-      ),
-      [],
-    );
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  useImperativeHandle(ref, () => bottomSheetRef.current!, []);
+  useSheetVisibility(bottomSheetRef, show);
 
-    return (
-      <GorhomBottomSheet
-        {...restProps}
-        {..._getPropsBottomSheet({
-          bottomSheetRef, snapPoints, renderBackdrop, onChange: handleSheetChanges, sheetColor,
-        })}
-      >
-        <BottomSheetView style={styles.contentContainer}>
-          {_renderHeader({ title, showCloseButton, onClosePress: handleClosePress })}
-          <View style={styles.body}>{children}</View>
-        </BottomSheetView>
-      </GorhomBottomSheet>
-    );
-  },
-);
+  const handleSheetChanges = useSheetChanges(onClose, onCloseBottomSheet, onShowBottomSheet);
+  const handleClosePress = useCallback(() => bottomSheetRef.current?.close(), []);
+  const renderBackdrop = useBackdropRenderer();
+
+  const sheetProps = _getPropsBottomSheet({
+    bottomSheetRef, snapPoints, renderBackdrop, onChange: handleSheetChanges, sheetColor,
+  });
+
+  return (
+    <GorhomBottomSheet {...restProps} {...sheetProps}>
+      <BottomSheetView style={styles.contentContainer}>
+        {_renderHeader({ title, showCloseButton, onClosePress: handleClosePress })}
+        <View style={styles.body}>{children}</View>
+      </BottomSheetView>
+    </GorhomBottomSheet>
+  );
+});
 
 export default React.memo(CustomBottomSheet);

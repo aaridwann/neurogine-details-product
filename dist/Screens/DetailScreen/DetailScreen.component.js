@@ -15,36 +15,10 @@ import ImageSlider from '../../Components/ImageSlider/ImageSlider.component';
 import ReloadScreen from '../../Components/ReloadScreen/ReloadScreen.component';
 import Skeleton from '../../Components/Shimmering/Shimmering.component';
 import fixture from '../../Fixture/Products.json';
+import { mapProductToTwoSlides } from '../../Utils/Data/Data.utils';
 const STAR_SIZE = 12;
-const _mapProductToTwoSlides = (product) => {
-    if (!product)
-        return [];
-    const productId = get(product, 'id', '0');
-    const title = get(product, 'title', '');
-    const description = get(product, 'description', '');
-    const category = get(product, 'category', '');
-    const brand = get(product, 'brand', '') || category;
-    const tags = get(product, 'tags', []);
-    const firstImage = get(product, 'images[0]', '') || get(product, 'thumbnail', '') || '';
-    const secondImage = get(product, 'thumbnail', '') || get(product, 'images[1]', '') || firstImage;
-    const tagList = tags.length ? `#${tags.join(' #')}` : '';
-    return [
-        {
-            id: `${productId}-slide-1`,
-            image: firstImage,
-            title,
-            subtitle: description,
-        },
-        {
-            id: `${productId}-slide-2`,
-            image: secondImage,
-            title: brand.toUpperCase(),
-            subtitle: `Category: ${category} ${tagList}`.trim(),
-        },
-    ];
-};
 const _renderImageSlide = (product, isLoading) => {
-    const slidesData = _mapProductToTwoSlides(product);
+    const slidesData = mapProductToTwoSlides(product);
     return (_jsx(ImageSlider, { autoPlayInterval: 3500, data: slidesData, isLoading: isLoading }));
 };
 const _renderTitle = (title, isLoading) => (isLoading ?

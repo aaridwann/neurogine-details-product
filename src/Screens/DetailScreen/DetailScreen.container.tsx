@@ -3,7 +3,6 @@ import React from 'react';
 import get from 'lodash/get';
 
 import DetailScreenComponent from './DetailScreen.component';
-import ReloadScreen from '../../Components/ReloadScreen/ReloadScreen.component';
 import useProductDetail from '../../Hooks/UseProductDetail/UseProductDetail.hooks';
 
 import type { DetailScreenProps } from '../../Types';

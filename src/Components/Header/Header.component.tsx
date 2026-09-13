@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, type ReactNode } from 'react';
 
 import { Text, View } from 'react-native';
 
@@ -19,32 +19,43 @@ import FireworkLottie from '../../Assets/Lottie/sparks.json';
 import type { AnimationStyle, HeaderProps } from './Header.component.types';
 import type { VoidFunction } from '../../Types';
 
-const _renderLeftContent = (onBackPress: VoidFunction = noop) => (
+/**
+ * Render Left Content
+ * @param {ReactNode} onBackPress - Back press handler
+ * @returns {ReactNode} - Render left content
+ */
+const _renderLeftContent = (onBackPress: VoidFunction = noop): ReactNode => (
   <HeaderButton onPress={onBackPress}>
     <ArrowLeft color="#0F172A" size={20} strokeWidth={2.2} />
   </HeaderButton>
 );
 
+/**
+ * Render Middle Content
+ * @param {ReactNode} animatedTitleStyle - Animated title style
+ * @param {string} title - Title
+ * @param {string} subtitle - Subtitle
+ * @returns {ReactNode} - Render middle content
+ */
 const _renderMiddleContent = (
   animatedTitleStyle: AnimationStyle,
   title: string,
   subtitle: string,
-) => (
+): ReactNode => (
   <Animated.View style={[styles.titleContainer, animatedTitleStyle]}>
-    <Text numberOfLines={1} style={styles.titleText}>
-      {title}
-    </Text>
-    {subtitle && (
-      <Text numberOfLines={1} style={styles.subtitleText}>
-        {subtitle}
-      </Text>
-    )}
+    <Text numberOfLines={1} style={styles.titleText}>{title}</Text>
+    {subtitle && (<Text numberOfLines={1} style={styles.subtitleText}>{subtitle}</Text>)}
   </Animated.View>
 );
 
+/**
+ * Render Right Content
+ * @param {VoidFunction} onNotificationPress - Notification press handler
+ * @param {boolean} showNotificationBadge - Show notification badge
+ * @returns {ReactNode} - Render right content
+ */
 const _renderRightContent = (
-  onNotificationPress: VoidFunction = noop,
-  showNotificationBadge: boolean,
+  onNotificationPress: VoidFunction = noop, showNotificationBadge: boolean,
 ): React.ReactNode => (
   <View style={styles.rightActionContainer}>
     <HeaderButton onPress={onNotificationPress}>
@@ -52,23 +63,27 @@ const _renderRightContent = (
       {showNotificationBadge && <View style={styles.badge} />}
     </HeaderButton>
     <View style={styles.lottieContainer} pointerEvents="none">
-      <LottieView
-        autoPlay
-        loop
-        source={FireworkLottie}
-        style={styles.lottie}
-      />
+      <LottieView autoPlay loop source={FireworkLottie} style={styles.lottie}/>
     </View>
   </View>
 );
 
-export const HeaderComponent: React.FC<HeaderProps> = ({
+/**
+ * Main Component
+ * @param {string} title - Title
+ * @param {string} subtitle - Subtitle
+ * @param {VoidFunction} onBackPress - Back press handler
+ * @param {VoidFunction} onNotificationPress - Notification press handler
+ * @param {boolean} showNotificationBadge - Show notification badge
+ * @returns {ReactNode} - Render header
+ */
+const HeaderComponent: React.FC<HeaderProps> = ({
   title = 'Catalog',
   subtitle = 'Discover Products',
   onBackPress,
   onNotificationPress,
   showNotificationBadge = true,
-}) => {
+}): ReactNode => {
   const opacity = useSharedValue(0);
   const translateY = useSharedValue(-8);
 

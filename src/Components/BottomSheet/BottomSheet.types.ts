@@ -1,5 +1,6 @@
 import type { ModalBaseProps } from 'react-native';
 
+import type { VoidFunction } from '../../Types';
 import type { BottomSheetBackdropProps, BottomSheetProps } from '@gorhom/bottom-sheet';
 import type { BottomSheetMethods } from '@gorhom/bottom-sheet/lib/typescript/types';
 
@@ -14,9 +15,9 @@ export type CustomBottomSheetRef = BottomSheetMethods;
 
 export interface CustomBottomSheetProps extends ModalBaseProps {
   show?: boolean;
-  onClose?: () => void;
-  onCloseBottomSheet?: () => void;
-  onShowBottomSheet?: () => void;
+  onClose?: VoidFunction;
+  onCloseBottomSheet?: VoidFunction;
+  onShowBottomSheet?: VoidFunction;
   sheetColor?: string;
 }
 

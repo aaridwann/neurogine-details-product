@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { type ReactNode, useEffect } from 'react';
 
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, View } from 'react-native';
 
 import { noop } from 'lodash';
 import LottieView from 'lottie-react-native';
@@ -8,31 +8,24 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withSpring,
+  type SharedValue,
 } from 'react-native-reanimated';
 
 import GeneralText from '@Neurogine/ui-kit-general-text';
 import { VARIANT } from '@Neurogine/ui-kit-general-text/dist/Constants';
 
+import styles from './ReloadScreen.component.styles';
 import RefreshLottie from '../../Assets/Lottie/Refresh.json';
 
-import type { Navigation, VoidFunction } from '../../Types';
+import type { ReloadButtonProps, ReloadScreenProps } from './ReloadScreen.component.types';
+import type { VoidFunction } from '../../Types';
 
-export interface ReloadScreenProps {
-  onReload: VoidFunction;
-  title?: string;
-  description?: string;
-  buttonText?: string;
-  lottieSource?: string;
-  navigation: Navigation
-  secondButtonText?: string;
-  secondButtonOnPress?: VoidFunction;
-}
-
-// -----------------------------------------------------------------------------
-// HELPER RENDERS (Di luar komponen utama & <15 baris per fungsi)
-// -----------------------------------------------------------------------------
-
-export const renderLottieAnimation = (source?: string) => (
+/**
+ * render Lottie Animation
+ * @param {string} source - source assets
+ * @returns {ReactNode}
+ */
+const renderLottieAnimation = (source?: string): ReactNode => (
   <View style={styles.lottieWrapper}>
     <LottieView
       autoPlay
@@ -43,7 +36,13 @@ export const renderLottieAnimation = (source?: string) => (
   </View>
 );
 
-export const renderContentText = (title: string, description: string) => (
+/**
+ * render Content Text
+ * @param {string} title - title
+ * @param {string} description - description
+ * @returns {ReactNode} - Render Content Text
+ */
+const renderContentText = (title: string, description: string): ReactNode => (
   <View style={styles.textContainer}>
     <GeneralText style={styles.title} variant={VARIANT.HEADLINE2}>
       {title}
@@ -54,54 +53,84 @@ export const renderContentText = (title: string, description: string) => (
   </View>
 );
 
-export const renderReloadButton = (
+/**
+ * handle press in
+ * @param {Animated.SharedValue<number>} scale - scale animation
+ */
+const handlePressIn = (scale: SharedValue<number>): void => {
+  scale.value = withSpring(0.95);
+};
+
+/**
+ * handle press out
+ * @param {Animated.SharedValue<number>} scale - scale animation
+ * @param {VoidFunction} onPress - press handler
+ */
+const handlePressOut = (scale: SharedValue<number>, onPress: VoidFunction): void => {
+  scale.value = withSpring(1);
+  onPress();
+};
+
+/**
+ * render button
+ * @param {Animated.SharedValue<number>} scale - scale animation
+ * @param {VoidFunction} onPress - press handler
+ * @param {string} buttonText - button text
+ * @returns {ReactNode} - Render Button
+ */
+const _renderButton = (
+  scale: SharedValue<number>,
   onPress: VoidFunction,
   buttonText: string,
-  scale: Animated.SharedValue<number>,
-  secondButtonText: string,
-  secondButtonOnPress: VoidFunction,
-): React.ReactNode => {
-  const animatedStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: scale.value }],
-  }));
+):ReactNode => (
+  <Pressable
+    onPressIn={() => handlePressIn(scale)}
+    onPressOut={() => handlePressOut(scale, onPress)}
+    style={styles.button}
+  >
+    <GeneralText style={styles.buttonText} variant={VARIANT.LABEL1}>
+      {buttonText}
+    </GeneralText>
+  </Pressable>
+);
 
-  const handlePressIn = () => {
-    scale.value = withSpring(0.95);
-  };
-
-  const handlePressOut = () => {
-    scale.value = withSpring(1);
-    onPress();
-  };
+/**
+ * render Reload Button
+ * @param {VoidFunction} onPress - reload press handler
+ * @param {string} buttonText - button text
+ * @param {Animated.SharedValue<number>} scale - scale animation
+ * @param {string} secondButtonText - second button text
+ * @param {VoidFunction} secondButtonOnPress - second button press handler
+ * @returns {ReactNode} - Render Reload Button
+ */
+const ReloadButton = ({
+  onPress,
+  buttonText,
+  scale,
+  secondButtonText,
+  secondButtonOnPress }: ReloadButtonProps): ReactNode => {
+  const animatedStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.value }] }));
 
   return (
     <Animated.View style={[styles.buttonWrapper, animatedStyle]}>
-      <Pressable
-        onPressIn={handlePressIn}
-        onPressOut={handlePressOut}
-        style={styles.button}
-      >
-        <GeneralText style={styles.buttonText} variant={VARIANT.LABEL1}>
-          {buttonText}
-        </GeneralText>
-      </Pressable>
-      <Pressable
-        onPressIn={handlePressIn}
-        onPressOut={secondButtonOnPress}
-        style={styles.button}
-      >
-        <GeneralText style={styles.buttonText} variant={VARIANT.LABEL1}>
-          {secondButtonText}
-        </GeneralText>
-      </Pressable>
+      {_renderButton(scale, onPress, buttonText)}
+      {secondButtonText && _renderButton(scale, secondButtonOnPress, secondButtonText)}
     </Animated.View>
   );
 };
 
-// -----------------------------------------------------------------------------
-// MAIN COMPONENT
-// -----------------------------------------------------------------------------
-
+/**
+ * REload screen
+ * @param {VoidFunction} onReload - reload handler
+ * @param {string} title - title
+ * @param {string} description - description
+ * @param {string} buttonText - button text
+ * @param {string} lottieSource - lottie source
+ * @param {Navigation} navigation - navigation
+ * @param {string} secondButtonText - second button text
+ * @param {VoidFunction} secondButtonOnPress - second button press handler
+ * @returns {ReactNode} - Render Reload Screen
+ */
 export const ReloadScreen: React.FC<ReloadScreenProps> = ({
   onReload = noop,
   title = 'Connection is broken',
@@ -131,79 +160,18 @@ export const ReloadScreen: React.FC<ReloadScreenProps> = ({
       <View style={styles.content}>
         {renderLottieAnimation(lottieSource)}
         {renderContentText(title, description)}
-        {renderReloadButton(
-          onReload, buttonText, buttonScale, secondButtonText, secondButtonOnPress,
-        )}
+        {<ReloadButton
+          onPress={onReload}
+          buttonText={buttonText}
+          scale={buttonScale}
+          secondButtonText={secondButtonText}
+          secondButtonOnPress={secondButtonOnPress}
+        />}
       </View>
     </View>
   );
 };
 
-// -----------------------------------------------------------------------------
-// STYLES (Royal Blue Accent Palette)
-// -----------------------------------------------------------------------------
+ReloadScreen.displayName = 'ReloadScreen';
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: '#558cc3ff',
-    flex: 1,
-    justifyContent: 'center',
-    // paddingHorizontal: 24,
-  },
-  content: {
-    alignItems: 'center',
-    maxWidth: 320,
-    width: '100%',
-  },
-  lottieWrapper: {
-    alignItems: 'center',
-    height: 200,
-    justifyContent: 'center',
-    width: 200,
-  },
-  lottie: {
-    height: '100%',
-    width: '100%',
-  },
-  textContainer: {
-    alignItems: 'center',
-    gap: 8,
-    marginTop: 16,
-  },
-  title: {
-    color: '#FFFFFF',
-    fontWeight: '700',
-    textAlign: 'center',
-  },
-  description: {
-    color: '#e9e9e9ff',
-    lineHeight: 20,
-    textAlign: 'center',
-  },
-  buttonWrapper: {
-    gap: 8,
-    marginTop: 32,
-    width: '100%',
-  },
-  button: {
-    alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.85)',
-    borderRadius: 12,
-    justifyContent: 'center',
-    paddingVertical: 14,
-    shadowColor: 'rgba(0, 86, 148, 0.4)',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 8,
-    elevation: 4,
-  },
-  buttonText: {
-    // color: '#FFFFFF',
-    color: '#426e9bff',
-    fontWeight: '600',
-    letterSpacing: 0.3,
-  },
-});
-
-export default ReloadScreen;
+export default React.memo(ReloadScreen);

@@ -5,4 +5,4 @@ export interface BadgeTextComponentProps {
   color?: string;
   backgroundColor?: string;
   style?: StyleProp<ViewStyle>;
-}
+};

@@ -6,7 +6,6 @@ export interface PaginationProps {
 export interface ImageSliderProps {
   data: SliderItem[];
   autoPlayInterval?: number;
-//   onSlideChane
 }
 
 export interface SliderItem {
@@ -19,4 +18,13 @@ export interface SliderItem {
 export interface ImageSliderProps {
   image: string;
   alt: string;
+}
+
+export interface ExtendedImageSliderProps extends ImageSliderProps {
+  isLoading?: boolean;
+}
+
+export interface SlideItemProps {
+  item?: SliderItem;
+  isActive?: boolean;
 }
