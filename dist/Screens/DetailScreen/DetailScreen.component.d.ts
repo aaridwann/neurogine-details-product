@@ -1,14 +1,19 @@
 import React from 'react';
-import { DetailScreenComponentProps } from './DetailScreen.types';
-/**
- * DetailScreenComponent is a component for the DetailScreen.
- * It is responsible for displaying the data from the Redux store.
- * @param {Object} props - The component props.
- * @param {Object} props.itemId - The item ID.
- * @param {Object} props.title - The title.
- * @param {Object} props.onGoBack - The callback function to go back.
- * @returns {React.Component} The DetailScreenComponent.
- */
-declare const DetailScreenComponent: React.FC<DetailScreenComponentProps>;
+import { type TextStyle } from 'react-native';
+import { type IoniconsIconName } from '@react-native-vector-icons/ionicons';
+import type { DetailScreenComponentProps } from './DetailScreen.types';
+import type { ProductType } from '../../Types';
+export interface InfoItem {
+    key: string;
+    icon: IoniconsIconName;
+    label: string;
+    value: string;
+    textStyle?: TextStyle;
+    iconColor?: string;
+}
+export declare const _renderTags: (tags: string[], isLoading: boolean) => React.JSX.Element;
+export declare const _renderDescription: (description: string, isLoading: boolean) => React.JSX.Element;
+export declare const _renderProductSuggestion: (products: ProductType[], isLoading: boolean, selectProductSuggestion: any) => React.JSX.Element;
+declare const DetailScreenComponent: ({ data, isLoading, refetch, isRefecthing, selectProductSuggestion, }: DetailScreenComponentProps) => React.JSX.Element;
 export default DetailScreenComponent;
 //# sourceMappingURL=DetailScreen.component.d.ts.map

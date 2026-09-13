@@ -68,7 +68,26 @@ export default tseslint.config(
       }
     },
     rules: {
-      /* === 1. SUPER STRICT IMPORT ORDER RULES === */
+      "indent": ["error", 2, { "SwitchCase": 1 }],
+      "semi": ["error", "always"],
+      "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+      "jsx-quotes": ["error", "prefer-double"],
+      "no-trailing-spaces": "error",
+      "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+      "object-shorthand": ["error", "always"],
+      "quote-props": ["error", "as-needed"],
+
+      "padding-line-between-statements": [
+        "error",
+        { "blankLine": "always", "prev": "*", "next": "return" },
+        { "blankLine": "always", "prev": "block-like", "next": "*" },
+        { "blankLine": "always", "prev": "*", "next": "function" },
+        { "blankLine": "always", "prev": "function", "next": "*" },
+        { "blankLine": "never", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] },
+        { "blankLine": "always", "prev": "multiline-const", "next": "*" },
+        { "blankLine": "always", "prev": "*", "next": "multiline-const" }
+      ],
+
       "import/order": ["error", {
         "groups": [
           "builtin",
@@ -87,17 +106,24 @@ export default tseslint.config(
             "pattern": "react-native",
             "group": "builtin",
             "position": "before"
+          },
+          {
+            "pattern": "@Neurogine/**",
+            "group": "internal",
+            "position": "before"
           }
         ],
         "pathGroupsExcludedImportTypes": ["react", "react-native"],
         "newlines-between": "always",
         "alphabetize": { "order": "asc", "caseInsensitive": true }
       }],
+      "@typescript-eslint/consistent-type-imports": ["error", {
+        "prefer": "type-imports",
+        "fixStyle": "separate-type-imports"
+      }],
 
-      /* === 2. ARROW FUNCTION & SHORTHAND STRICTION === */
       "func-style": ["error", "expression"],
       "prefer-arrow-callback": "error",
-      "object-shorthand": ["error", "always"],
       "prefer-destructuring": ["error", {
         "VariableDeclarator": { "array": true, "object": true },
         "AssignmentExpression": { "array": false, "object": false }
@@ -105,13 +131,6 @@ export default tseslint.config(
       "no-nested-ternary": "error",
       "no-unneeded-ternary": "error",
 
-      /* === 3. GAYA BARIS KOSONG & UKURAN KODE === */
-      "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
-      "padding-line-between-statements": [
-        "error",
-        { "blankLine": "always", "prev": "*", "next": ["function", "const", "let"] },
-        { "blankLine": "always", "prev": ["function"], "next": "*" }
-      ],
       "max-len": ["error", { 
         "code": 100, 
         "tabWidth": 2, 
@@ -123,8 +142,6 @@ export default tseslint.config(
       "max-lines-per-function": ["error", { "max": 40, "skipBlankLines": true, "skipComments": true }],
       "max-depth": ["error", 3],
       "max-params": ["error", 3],
-
-      /* === 4. KONSISTENSI SPASI & KOMA === */
       "object-curly-spacing": ["error", "always"],
       "comma-spacing": ["error", { "before": false, "after": true }],
       "comma-dangle": ["error", "always-multiline"],
@@ -132,7 +149,6 @@ export default tseslint.config(
       "space-in-parens": ["error", "never"],
       "keyword-spacing": ["error", { "before": true, "after": true }],
 
-      /* === 5. BUG PREVENTION & STRICT BEST PRACTICES === */
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
       "@typescript-eslint/no-explicit-any": "error",
@@ -153,7 +169,6 @@ export default tseslint.config(
       "no-lonely-if": "error",
       "no-else-return": ["error", { "allowElseIf": false }],
 
-      /* === 6. REACT & REACT NATIVE ECOSYSTEM === */
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/self-closing-comp": "error",

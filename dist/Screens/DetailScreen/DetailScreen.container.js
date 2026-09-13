@@ -1,7 +1,7 @@
 import React from 'react';
 import get from 'lodash/get';
-// import { useSelector } from 'react-redux';
 import DetailScreenComponent from './DetailScreen.component';
+import useProductDetail from '../../Hooks/UseProductDetail/UseProductDetail.hooks';
 /**
  * DetailScreenContainer is a container component for the DetailScreen.
  * It is also responsible for handling the navigation events.
@@ -11,13 +11,12 @@ import DetailScreenComponent from './DetailScreen.component';
  * @returns {React.Component} The DetailScreenComponent.
  */
 const DetailsScreen = ({ route, navigation }) => {
-    // const state = useSelector((state: any) => state);
-    const itemId = get(route, 'params.itemId');
-    const title = get(route, 'params.title');
-    const handleGoBack = () => {
-        navigation.goBack();
-    };
-    return (<DetailScreenComponent itemId={itemId} title={title} onGoBack={handleGoBack}/>);
+    const id = get(route, 'params.id', '');
+    const hooks = useProductDetail(id);
+    const selectProductSuggestion = React.useCallback((id) => {
+        navigation.push('DetailScreen', { id });
+    }, []);
+    return (<DetailScreenComponent refetch={hooks.refetch} isRefecthing={hooks.fetchStatus === 'fetching' && hooks.data} data={hooks.data} navigation={navigation} isLoading={hooks.isLoading || !hooks.data} selectProductSuggestion={selectProductSuggestion}/>);
 };
 DetailsScreen.displayName = 'DetailScreen';
 export default React.memo(DetailsScreen);

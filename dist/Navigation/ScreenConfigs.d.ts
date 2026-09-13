@@ -1,5 +1,5 @@
 import { DetailRoutes } from '../Shared';
-import { ScreenConfig } from './ScreemConfigs.types';
+import type { ScreenConfig } from './ScreemConfigs.types';
 /**
  * Configuration for detail screens
  * @returns {ScreenConfig<"DetailScreen">} Array of ScreenConfig objects

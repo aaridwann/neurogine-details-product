@@ -1,3 +1,3 @@
 export const DetailRoutes = {
-    DETAIL_ROUTE: "DetailScreen",
+    DETAIL_ROUTE: 'DetailScreen',
 };

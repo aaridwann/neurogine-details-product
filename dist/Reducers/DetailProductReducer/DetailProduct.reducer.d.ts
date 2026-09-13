@@ -1,4 +1,4 @@
-import { DetailAction, DetailState } from './DetailProduct.reducer.types';
+import type { DetailAction, DetailState } from './DetailProduct.reducer.types';
 /**
  * Reducer for detail product
  * @param state - Initial state

@@ -1,10 +1,11 @@
 import React from 'react';
 
 import get from 'lodash/get';
-// import { useSelector } from 'react-redux';
 
 import DetailScreenComponent from './DetailScreen.component';
-import { DetailScreenProps } from '../../Types';
+import useProductDetail from '../../Hooks/UseProductDetail/UseProductDetail.hooks';
+
+import type { DetailScreenProps } from '../../Types';
 
 /**
  * DetailScreenContainer is a container component for the DetailScreen.
@@ -15,21 +16,21 @@ import { DetailScreenProps } from '../../Types';
  * @returns {React.Component} The DetailScreenComponent.
  */
 const DetailsScreen: React.FC<DetailScreenProps> = ({ route, navigation }) => {
-  // const state = useSelector((state: any) => state);
+  const id = get(route, 'params.id', '');
+  const hooks = useProductDetail(id);
 
-  const itemId = get(route, 'params.itemId') as number | undefined;
-
-  const title = get(route, 'params.title') as string | undefined;
-
-  const handleGoBack = () => {
-    navigation.goBack();
-  };
+  const selectProductSuggestion = React.useCallback((id: string) => {
+    navigation.push('DetailScreen', { id });
+  }, []);
 
   return (
     <DetailScreenComponent
-      itemId={itemId}
-      title={title}
-      onGoBack={handleGoBack}
+      refetch={hooks.refetch}
+      isRefecthing={hooks.fetchStatus === 'fetching' && hooks.data}
+      data={hooks.data}
+      navigation={navigation}
+      isLoading={hooks.isLoading || !hooks.data}
+      selectProductSuggestion={selectProductSuggestion}
     />
   );
 };
