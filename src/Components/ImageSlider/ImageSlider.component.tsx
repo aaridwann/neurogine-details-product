@@ -160,9 +160,9 @@ const getItemLayoutConfig = (_: number, index: number):
 const _gerFlatListProps = (
   data: SliderItem[],
   handleScroll: (e: NativeSyntheticEvent<NativeScrollEvent>) => void,
-  flatListRef: React.RefObject<FlatList<SlideItemProps>>,
+  flatListRef: React.RefObject<FlatList<SliderItem>>,
   activeIndex: number,
-): FlatListProps<SlideItemProps> => ({
+): FlatListProps<SliderItem> => ({
   data,
   decelerationRate: 'fast',
   getItemLayout: getItemLayoutConfig,
@@ -205,9 +205,7 @@ const ImageSlider: React.FC<ExtendedImageSliderProps> = ({
     return () => clearInterval(timer);
   }, [activeIndex, totalLength, autoPlayInterval, isLoading]);
 
-  if (isLoading) {
-    return <View style={styles.imageSliderWrapper}>{renderShimmerSkeleton()}</View>;
-  }
+  if (isLoading) return <View style={styles.imageSliderWrapper}>{renderShimmerSkeleton()}</View>;
 
   return (
     <View style={styles.imageSliderWrapper}>

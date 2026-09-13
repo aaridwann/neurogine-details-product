@@ -74,9 +74,7 @@ const styles = StyleSheet.create({
     descriptionBody: {
         marginTop: 8,
     },
-    shippingAndStatusContainer: {
-    //Todo
-    },
+    shippingAndStatusContainer: {},
     shippingAndStatusList: {
         gap: 2,
     },

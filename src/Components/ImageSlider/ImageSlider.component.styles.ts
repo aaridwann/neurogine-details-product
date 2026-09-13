@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { ITEM_WIDTH, SLIDER_HEIGHT } from './ImageSlider.component';
+import { ITEM_WIDTH, SLIDER_HEIGHT } from './ImageSlider.component.configs';
 
 const styles = StyleSheet.create({
   imageSliderWrapper: {

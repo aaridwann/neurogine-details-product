@@ -69,7 +69,6 @@ Pods/
 build/
 
 node_modules/
-dist/
 build/
 lib/
 coverage/
