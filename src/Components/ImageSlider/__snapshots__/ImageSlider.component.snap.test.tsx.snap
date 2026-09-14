@@ -4,7 +4,7 @@ exports[`Image Slider Component Snapshots should match snapshot when isLoading i
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -12,8 +12,8 @@ exports[`Image Slider Component Snapshots should match snapshot when isLoading i
   <View
     style={
       {
-        "height": undefined,
-        "width": undefined,
+        "height": 380,
+        "width": 750,
       }
     }
   >
@@ -25,7 +25,7 @@ exports[`Image Slider Component Snapshots should match snapshot when isLoading i
           },
           {
             "borderRadius": 0,
-            "height": 280,
+            "height": 380,
             "width": 750,
           },
           undefined,
@@ -163,7 +163,7 @@ exports[`Image Slider Component Snapshots should match snapshot when isLoading i
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -171,8 +171,8 @@ exports[`Image Slider Component Snapshots should match snapshot when isLoading i
   <View
     style={
       {
-        "height": undefined,
-        "width": undefined,
+        "height": 380,
+        "width": 750,
       }
     }
   >
@@ -184,7 +184,7 @@ exports[`Image Slider Component Snapshots should match snapshot when isLoading i
           },
           {
             "borderRadius": 0,
-            "height": 280,
+            "height": 380,
             "width": 750,
           },
           undefined,
@@ -322,7 +322,7 @@ exports[`Image Slider Component Snapshots should match snapshot with autoPlayInt
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -384,8 +384,8 @@ exports[`Image Slider Component Snapshots should match snapshot with autoPlayInt
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -476,8 +476,8 @@ exports[`Image Slider Component Snapshots should match snapshot with autoPlayInt
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -568,8 +568,8 @@ exports[`Image Slider Component Snapshots should match snapshot with autoPlayInt
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -666,7 +666,7 @@ exports[`Image Slider Component Snapshots should match snapshot with custom auto
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -728,8 +728,8 @@ exports[`Image Slider Component Snapshots should match snapshot with custom auto
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -820,8 +820,8 @@ exports[`Image Slider Component Snapshots should match snapshot with custom auto
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -912,8 +912,8 @@ exports[`Image Slider Component Snapshots should match snapshot with custom auto
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1010,7 +1010,7 @@ exports[`Image Slider Component Snapshots should match snapshot with empty props
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -1047,7 +1047,7 @@ exports[`Image Slider Component Snapshots should match snapshot with empty strin
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -1099,8 +1099,8 @@ exports[`Image Slider Component Snapshots should match snapshot with empty strin
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1153,7 +1153,7 @@ exports[`Image Slider Component Snapshots should match snapshot with extremely l
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -1205,8 +1205,8 @@ exports[`Image Slider Component Snapshots should match snapshot with extremely l
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1318,7 +1318,7 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -1414,8 +1414,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1494,8 +1494,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1574,8 +1574,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1654,8 +1654,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1734,8 +1734,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1814,8 +1814,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1894,8 +1894,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -1974,8 +1974,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -2054,8 +2054,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -2134,8 +2134,8 @@ exports[`Image Slider Component Snapshots should match snapshot with large datas
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -2370,7 +2370,7 @@ exports[`Image Slider Component Snapshots should match snapshot with single slid
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -2422,8 +2422,8 @@ exports[`Image Slider Component Snapshots should match snapshot with single slid
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -2535,7 +2535,7 @@ exports[`Image Slider Component Snapshots should match snapshot with slider item
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -2586,8 +2586,8 @@ exports[`Image Slider Component Snapshots should match snapshot with slider item
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -2687,7 +2687,7 @@ exports[`Image Slider Component Snapshots should match snapshot with slider item
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -2738,8 +2738,8 @@ exports[`Image Slider Component Snapshots should match snapshot with slider item
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -2839,7 +2839,7 @@ exports[`Image Slider Component Snapshots should match snapshot with slider item
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -2889,8 +2889,8 @@ exports[`Image Slider Component Snapshots should match snapshot with slider item
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -2957,7 +2957,7 @@ exports[`Image Slider Component Snapshots should match snapshot with valid slide
 <View
   style={
     {
-      "height": undefined,
+      "height": 380,
       "position": "relative",
     }
   }
@@ -3019,8 +3019,8 @@ exports[`Image Slider Component Snapshots should match snapshot with valid slide
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -3111,8 +3111,8 @@ exports[`Image Slider Component Snapshots should match snapshot with valid slide
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
@@ -3203,8 +3203,8 @@ exports[`Image Slider Component Snapshots should match snapshot with valid slide
         <View
           style={
             {
-              "height": undefined,
-              "width": undefined,
+              "height": 380,
+              "width": 750,
             }
           }
         >
