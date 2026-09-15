@@ -305,7 +305,12 @@ const _gerPropsPullToRefresh = (refreshing: boolean, onRefresh: () => void) => (
     />,
 });
 
-const _renderBottomSheet = (showBottomSheet: boolean, refetch: VoidFunction, goBack: VoidFunction, onModalHide: VoidFunction) => (
+const _renderBottomSheet = (
+  showBottomSheet: boolean,
+  refetch: VoidFunction,
+  goBack: VoidFunction,
+  onModalHide: VoidFunction,
+) => (
   <BottomSheet onCloseBottomSheet={onModalHide} snapPoints={['80%']} sheetColor="#558cc3ff" show={showBottomSheet}>
     <ReloadScreen secondButtonOnPress={goBack} onReload={refetch} />
   </BottomSheet>
