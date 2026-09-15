@@ -67,6 +67,8 @@ Pods/
 *.xcworkspace
 .gradle/
 build/
+.dist/
+dist/
 
 node_modules/
 build/

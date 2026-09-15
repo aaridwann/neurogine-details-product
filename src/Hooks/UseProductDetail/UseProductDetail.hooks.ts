@@ -15,7 +15,9 @@ const useProductDetail = (id: string) => {
 
   const query = useQuery({
     queryKey: ['product-detail', id],
-    queryFn: () => fetchProductsDetail(id),
+    // === Mock for get error detail ===
+    queryFn: () => fetchProductsDetail(id === '1' ? '0' : id),
+    // queryFn: () => fetchProductsDetail(id),
     enabled: Boolean(id),
   });
 
