@@ -2,13 +2,11 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useEffect } from 'react';
 import { Text, View } from 'react-native';
 import { noop } from 'lodash';
-import LottieView from 'lottie-react-native';
 import { ArrowLeft, Bell } from 'lucide-react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming, } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './Header.component.styles';
 import { HeaderButton } from './HeaderButton.component';
-import FireworkLottie from '../../Assets/Lottie/sparks.json';
 /**
  * Render Left Content
  * @param {ReactNode} onBackPress - Back press handler
@@ -29,7 +27,7 @@ const _renderMiddleContent = (animatedTitleStyle, title, subtitle) => (_jsxs(Ani
  * @param {boolean} showNotificationBadge - Show notification badge
  * @returns {ReactNode} - Render right content
  */
-const _renderRightContent = (onNotificationPress = noop, showNotificationBadge) => (_jsxs(View, { style: styles.rightActionContainer, children: [_jsxs(HeaderButton, { onPress: onNotificationPress, children: [_jsx(Bell, { color: "#0F172A", size: 18, strokeWidth: 2 }), showNotificationBadge && _jsx(View, { style: styles.badge })] }), _jsx(View, { style: styles.lottieContainer, pointerEvents: "none", children: _jsx(LottieView, { autoPlay: true, loop: true, source: FireworkLottie, style: styles.lottie }) })] }));
+const _renderRightContent = (onNotificationPress = noop, showNotificationBadge) => (_jsx(View, { style: styles.rightActionContainer, children: _jsxs(HeaderButton, { onPress: onNotificationPress, children: [_jsx(Bell, { color: "#0F172A", size: 18, strokeWidth: 2 }), showNotificationBadge && _jsx(View, { style: styles.badge })] }) }));
 /**
  * Main Component
  * @param {string} title - Title

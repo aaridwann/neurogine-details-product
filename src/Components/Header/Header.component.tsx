@@ -3,7 +3,6 @@ import React, { useEffect, type ReactNode } from 'react';
 import { Text, View } from 'react-native';
 
 import { noop } from 'lodash';
-import LottieView from 'lottie-react-native';
 import { ArrowLeft, Bell } from 'lucide-react-native';
 import Animated, {
   useAnimatedStyle,
@@ -14,7 +13,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import styles from './Header.component.styles';
 import { HeaderButton } from './HeaderButton.component';
-import FireworkLottie from '../../Assets/Lottie/sparks.json';
 
 import type { AnimationStyle, HeaderProps } from './Header.component.types';
 import type { VoidFunction } from '../../Types';
@@ -62,9 +60,6 @@ const _renderRightContent = (
       <Bell color="#0F172A" size={18} strokeWidth={2} />
       {showNotificationBadge && <View style={styles.badge} />}
     </HeaderButton>
-    <View style={styles.lottieContainer} pointerEvents="none">
-      <LottieView autoPlay loop source={FireworkLottie} style={styles.lottie}/>
-    </View>
   </View>
 );
 
