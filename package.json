@@ -5,10 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "postinstall": "npm run build",
     "prepare": "npm run build",
-    "build": "rm -rf dist && tsc --noEmitOnError false || exit 0",
-    "watch": "tsc --watch",
     "prepublishOnly": "yarn build",
     "typescript": "tsc --noEmit",
     "lint": "ESLINT_USE_FLAT_CONFIG=true eslint . --no-cache",
